@@ -1,41 +1,27 @@
+// Quiz Game. "GUESS THE ____!"
+// Andrew McKenzie, Dipesh Thapa
+
 #include <iostream>
 #include <string>
 
 
 
-
-//void printBorder(std::string txt)
-//{
-//	for (int i = 0; i < txt.size(); ++i)
-//{
-//	std::cout << "=";
-//}
-//std::cout << std::endl << txt << std::endl;
-
-//for (int i = 0; i < txt.size(); ++i)
-//{
-//	std::cout << "=";
-//}
-//std::cout << std::endl;
-
-//}
-
-
-
-
 int main() {
+	
+	std::string Yes_No;
 
 	for (int column = 0; column < 80; ++column)
 	{
 		std::cout << "*";
 	}
 
-	std::cout << "               Welcome TO  " << std::endl;
+	std::cout << "               Welcome TO:  " << std::endl;
 	std::cout << "                           GUESS" << std::endl;
-	std::cout << "                                 The " << std::endl;
+	std::cout << "                                 THE " << std::endl;
 	std::cout << "                                    _______!" << std::endl;
 
 	// now print a carraige return, so we can start printing on the next line
+	std::cin >> Yes_No;
 
 	for (int row = 0; row < 8; ++row)
 	{
@@ -57,10 +43,13 @@ int main() {
 		std::cout << "*";
 	}
 
+	if (Yes_No == "Yes")
+	{
+
+	}
 
 
 	// now print a carraige return, so we can start printing on the next line
-
 	std::cout << " \n";
 
 
