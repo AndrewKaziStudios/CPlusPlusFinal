@@ -58,14 +58,20 @@ int main() {
 
 
 
+
+
+
+
+	else if (Yes_No == "No")
+	{
+		std::cout << " Quit Game ";
+	}
+
+
+
+
 	// now print a carraige return, so we can start printing on the next line
 	std::cout << " \n";
-
-
-
-
-
-
 
 	system("pause");
 	return 0;
