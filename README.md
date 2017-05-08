@@ -1,2 +1,0 @@
-# CPlusPlusFinal
-C++ Final
