@@ -5,7 +5,6 @@
 #include <string>
 
 
-
 int main() {
 	
 	std::string Yes_No, difficulty;
@@ -20,10 +19,6 @@ int main() {
 	std::cout << "                                 THE " << std::endl;
 	std::cout << "                                    _______!" << std::endl;
 
-	std::cout << "                     To Play Type            " << std::endl;
-	std::cout << "                         Yes                  " << std::endl;
-	std::cout << "                         No                     " << std::endl;
-	std::cin >> Yes_No;
 	
 	
 
@@ -49,8 +44,14 @@ int main() {
 		std::cout << "*";
 	}
 
+
+
+	std::cout << "To Play Type Yes! Type No to Quit!" << std::endl;
+	std::cin >> Yes_No;
+
 	if (Yes_No == "Yes")
 	{
+		std::cout << " " << std::endl;
 		std::cout << "Thank you for playing." << std::endl;
 		std::cout << "Please chose a difficulty: Easy, Medium, Hard." << std::endl;
 		std::cin >> difficulty;
@@ -78,7 +79,7 @@ int main() {
 
 	else if (Yes_No == "No")
 	{
-		std::cout << " Quit Game ";
+		exit(EXIT_FAILURE);
 	}
 
 
