@@ -35,6 +35,13 @@ int main() {
 	std::cout << "                                 The " << std::endl;
 	std::cout << "                                    _______!" << std::endl;
 
+	std::cout << "                     To Play Type            " << std::endl;
+	std::cout << "                         Yes                  " << std::endl;
+	std::cout << "                         No                     " << std::endl;
+
+	
+	
+
 	// now print a carraige return, so we can start printing on the next line
 
 	for (int row = 0; row < 8; ++row)
@@ -56,6 +63,8 @@ int main() {
 	{
 		std::cout << "*";
 	}
+
+
 
 
 
