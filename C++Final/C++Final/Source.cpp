@@ -8,7 +8,7 @@
 
 int main() {
 	
-	std::string Yes_No;
+	std::string Yes_No, difficulty;
 
 	for (int column = 0; column < 80; ++column)
 	{
@@ -23,12 +23,11 @@ int main() {
 	std::cout << "                     To Play Type            " << std::endl;
 	std::cout << "                         Yes                  " << std::endl;
 	std::cout << "                         No                     " << std::endl;
-
+	std::cin >> Yes_No;
 	
 	
 
 	// now print a carraige return, so we can start printing on the next line
-	std::cin >> Yes_No;
 
 	for (int row = 0; row < 8; ++row)
 	{
@@ -52,7 +51,22 @@ int main() {
 
 	if (Yes_No == "Yes")
 	{
+		std::cout << "Thank you for playing." << std::endl;
+		std::cout << "Please chose a difficulty: Easy, Medium, Hard." << std::endl;
+		std::cin >> difficulty;
 
+		if (difficulty == "Easy" || "easy")
+		{
+
+		}
+		else if (difficulty == "Medium" || "medium")
+		{
+
+		}
+		else if (difficulty == "Hard" || "hard")
+		{
+
+		}
 	}
 
 
