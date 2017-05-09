@@ -3,7 +3,9 @@
 
 int main() {
 
-	std::string Yes_No, difficulty;
+	std::string Yes_No, anwser;
+	int tries = 5;
+	char difficulty = ' ';
 
 	
 	std::cout << "Welcome TO:  " << std::endl;
@@ -22,19 +24,14 @@ int main() {
 		std::cout << "Thank you for playing." << std::endl;
 		std::cout << "Please chose a difficulty: Easy, Medium, Hard." << std::endl;
 		std::cin >> difficulty;
+		difficulty = toupper(difficulty);
 
-		if (difficulty == "Easy" || "easy")
+		switch (difficulty)
 		{
+			case ''
 
 		}
-		else if (difficulty == "Medium" || "medium")
-		{
 
-		}
-		else if (difficulty == "Hard" || "hard")
-		{
-
-		}
 	}
 
 
