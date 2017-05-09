@@ -5,8 +5,7 @@ int main() {
 
 	std::string Yes_No, difficulty;
 
-
-
+	
 	std::cout << "Welcome TO:  " << std::endl;
 	std::cout << " " << std::endl;
 	std::cout << "           GUESS" << std::endl;
