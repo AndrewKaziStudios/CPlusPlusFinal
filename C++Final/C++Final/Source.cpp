@@ -13,9 +13,6 @@ int main() {
 	std::cout << "            THE " << std::endl;
 	std::cout << "          _______!" << std::endl;
 
-
-
-
 	std::cout << " " << std::endl;
 	std::cout << "To Play Type Yes! Type No to Quit!" << std::endl;
 	std::cin >> Yes_No;
