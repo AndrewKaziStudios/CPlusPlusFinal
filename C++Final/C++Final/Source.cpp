@@ -4,7 +4,7 @@
 int main() {
 
 	std::string Yes_No, difficulty;
-
+	
 	
 	std::cout << "Welcome TO:  " << std::endl;
 	std::cout << " " << std::endl;
@@ -25,7 +25,7 @@ int main() {
 
 		if (difficulty == "Easy" || "easy")
 		{
-
+			
 		}
 		else if (difficulty == "Medium" || "medium")
 		{
