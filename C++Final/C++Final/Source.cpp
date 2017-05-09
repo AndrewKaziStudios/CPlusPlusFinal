@@ -1,5 +1,3 @@
-
-
 #include <iostream>
 #include <string>
 
@@ -9,15 +7,16 @@ int main() {
 
 
 
-	std::cout << "               Welcome TO:  " << std::endl;
-	std::cout << "                           GUESS" << std::endl;
-	std::cout << "                               THE " << std::endl;
-	std::cout << "                                  _______!" << std::endl;
+	std::cout << "Welcome TO:  " << std::endl;
+	std::cout << " " << std::endl;
+	std::cout << "           GUESS" << std::endl;
+	std::cout << "            THE " << std::endl;
+	std::cout << "          _______!" << std::endl;
 
 
 
 
-
+	std::cout << " " << std::endl;
 	std::cout << "To Play Type Yes! Type No to Quit!" << std::endl;
 	std::cin >> Yes_No;
 
@@ -46,7 +45,7 @@ int main() {
 
 	else if (Yes_No == "No")
 	{
-		std::cout << " Quit game " << std::endl;
+		exit(EXIT_FAILURE);
 	}
 
 
