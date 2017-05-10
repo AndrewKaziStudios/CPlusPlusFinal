@@ -35,7 +35,6 @@ int main() {
 	}
 
 
-
 	else if (Yes_No == "No")
 	{
 		exit(EXIT_FAILURE);
