@@ -3,6 +3,7 @@
 
 int main() {
 
+
 	std::string Yes_No, answer;
 	int tries = 5;
 
@@ -10,6 +11,8 @@ int main() {
 	std::string play;
 	int right_wrong = 0;
 	int wrong_right = 0;
+	
+
 	std::cout << "Welcome TO:  " << std::endl;
 	std::cout << " " << std::endl;
 	std::cout << "           GUESS" << std::endl;
@@ -25,12 +28,13 @@ int main() {
 		char difficulty = ' ';
 		std::cout << " " << std::endl;
 		std::cout << "Thank you for playing." << std::endl;
-		std::cout << "Please chose a difficulty: Easy, Medium, Hard." << std::endl;
+		std::cout << "Please chose a difficulty: Easy = E, Medium = M, Hard = H." << std::endl;
 		std::cin >> difficulty;
 		difficulty = toupper(difficulty);
-
+		
 		switch (difficulty)
 		{
+
 		case 'E':
 			std::cout << " " << std::endl;
 			std::cout << "In this level you have 5 lives to get all 5 questions correct." << std::endl;
@@ -59,6 +63,7 @@ int main() {
 			std::cout << "You have " << tries << " lives left & " << right_wrong << "/5 questions correct" << std::endl; 
 			break;
 
+
 		}
 
 	}
@@ -73,8 +78,3 @@ int main() {
 	system("pause");
 	return 0;
 }
-
-
-
-
-
