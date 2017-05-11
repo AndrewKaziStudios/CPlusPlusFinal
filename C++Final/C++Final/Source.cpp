@@ -33,6 +33,112 @@ int question1()
 	return 0;
 }
 
+int question2()
+{
+
+	std::string play;
+	int tries = 5;
+	int right_wrong = 0;
+	int wrong_right = 0;
+	
+	
+	std::cout << " " << std::endl;
+	std::cout << "#2                   With which sport is Micheal Jordan associated?" << std::endl;
+
+	std::cout << "A) Baseball" << std::endl;
+	std::cout << "B) Football" << std::endl;
+	std::cout << "C) Basketball" << std::endl;
+	std::cout << "D) Golf" << std::endl;
+	std::cin >> play;
+
+	if (play == "A" || "a")
+	{
+		std::cout << "Wrong! That is not the right answer" << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	else if (play == "B" || "b")
+	{
+		std::cout << "Wrong! That is not the right answer" << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (play == "C" || "c")
+	{
+		std::cout << "Right! You got it right!" << std::endl;
+		right_wrong++;
+	}
+
+	else if (play == "D" || "d")
+	{
+		std::cout << "Wrong! That is not the right answer" << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	std::cout << " " << std::endl;
+	std::cout << "You have " << tries << " lives left!" << std::endl;
+	return 0;
+
+}
+
+int question3()
+{
+	std::string name;
+	int tries = 5;
+	int right_wrong = 0;
+	int wrong_right = 0;
+
+	std::cout << " # 1) Name the world's largest island" << std::endl;
+	std::cout << " A) Madagascar" << std::endl;
+	std::cout << " B) Greenland " << std::endl;
+	std::cout << " C) United Kingdom" << std::endl;
+	std::cout << " D) Ireland" << std::endl;
+	std::cin >> name;
+	if (name == "B")
+	{
+		std::cout << "Good Job" << std::endl;
+		right_wrong++;
+	}
+
+	else if (name == "D")
+	{
+		std::cout << "Wrong answer" << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	else if (name == "A")
+	{
+		std::cout << "Wrong answer" << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (name == "C")
+	{
+		std::cout << "Wrong answer" << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	return 0;
+}
+
+int question4()
+{
+	std::string name;
+	int tries = 5;
+	int right_wrong = 0;
+	int wrong_right = 0;
+
+}
+
+
+int	question5()
+{
+
+}
 int main() {
 
 
@@ -70,7 +176,7 @@ int main() {
 		case 'E':
 			
 			question1();
-			
+			question2();
 			/*std::cout << " " << std::endl;
 			std::cout << "#2                   With which sport is Micheal Jordan associated?" << std::endl;
 			std::cout << "A) Baseball" << std::endl;
@@ -119,39 +225,8 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-
-			std::cout << " # 1) Name the world's largest island" << std::endl;
-			std::cout << " A) Madagascar" << std::endl;
-			std::cout << " B) Greenland " << std::endl;
-			std::cout << " C) United Kingdom" << std::endl;
-			std::cout << " D) Ireland" << std::endl;
-			std::cin >> name;
-			if (name == "B")
-			{
-				std::cout << "Good Job" << std::endl;
-				right_wrong++;
-			}
-
-			else if (name == "D")
-			{
-				std::cout << "Wrong answer" << std::endl;
-				tries--;
-				wrong_right++;
-			}
-			else if (name == "A")
-			{
-				std::cout << "Wrong answer" << std::endl;
-				tries--;
-				wrong_right++;
-			}
-
-			else if (name == "C")
-			{
-				std::cout << "Wrong answer" << std::endl;
-				tries--;
-				wrong_right++;
-			}
-			std::cout << " You have " << tries << " lives  left  " << std::endl;
+			question3();
+	
 
 			std::cout << " " << std::endl;
 			std::cout << " # 2) How many U.S states border the Gulf of Mexico " << std::endl;
