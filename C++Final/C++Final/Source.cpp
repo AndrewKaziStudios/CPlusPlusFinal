@@ -11,7 +11,7 @@ int question1()
 
 	std::cout << " " << std::endl;
 	std::cout << "#1                      Do you want to play this game?" << std::endl;
-	std::cout << "A) Yes" << std::endl;
+	std::cout << "A) Yes" << std::endl; // Correct answer
 	std::cout << "B) No" << std::endl;
 	std::cin >> play;
 	if (play == "A" || "a")
@@ -164,6 +164,7 @@ int main() {
 	if (Yes_No == "Yes" || "yes")
 	{
 		char difficulty = ' ';
+
 		std::cout << " " << std::endl;
 		std::cout << "Thank you for playing." << std::endl;
 		std::cout << "Please chose a difficulty: Easy = E, Medium = M, Hard = H." << std::endl;
