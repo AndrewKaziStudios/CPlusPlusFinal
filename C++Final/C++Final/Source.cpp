@@ -1,13 +1,26 @@
 #include <iostream>
 #include <string>
 
-
-
+int question1()
+{
+	
+	std::string play;
+	int tries = 5;
 	int right_wrong = 0;
 	int wrong_right = 0;
 
 	std::cout << " " << std::endl;
+	std::cout << "#1                      Do you want to play this game?" << std::endl;
+	std::cout << "A) Yes" << std::endl;
+	std::cout << "B) No" << std::endl;
+	std::cin >> play;
+	if (play == "A" || "a")
+	{
+		std::cout << "Hurray! You got it right!" << std::endl;
+		right_wrong++;
 
+	}
+	else if (play == "B" || "b")
 	{
 		std::cout << "Wrong! That is not the right answer" << std::endl;
 		tries--;
@@ -17,6 +30,7 @@
 
 	std::cout << " " << std::endl;
 	std::cout << "You have " << tries << " lives left!" << std::endl;
+}
 
 int main() {
 
