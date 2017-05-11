@@ -1,6 +1,41 @@
 #include <iostream>
 #include <string>
 
+
+int question1()
+{
+	std::string play;
+	int tries = 5;
+	int right_wrong = 0;
+	int wrong_right = 0;
+
+	std::cout << " " << std::endl;
+
+	std::cout << "#1                      Do you want to play this game?" << std::endl;
+	std::cout << "A) Yes" << std::endl;
+	std::cout << "B) No" << std::endl;
+	std::cin >> play;
+	if (play == "A" || "a")
+	{
+		std::cout << "Hurray! You got it right!" << std::endl;
+		right_wrong++;
+
+	}
+	else if (play == "B" || "b")
+	{
+		std::cout << "Wrong! That is not the right answer" << std::endl;
+		tries--;
+		wrong_right++;
+
+	}
+
+	std::cout << " " << std::endl;
+	std::cout << "You have " << tries << " lives left!" << std::endl;
+	return 0;
+}
+
+
+
 int main() {
 
 
@@ -36,7 +71,9 @@ int main() {
 		{
 
 		case 'E':
-			std::cout << " " << std::endl;
+			
+			question1();
+			/*std::cout << " " << std::endl;
 			std::cout << "In this level you have 5 lives to get all 5 questions correct." << std::endl;
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
@@ -63,7 +100,7 @@ int main() {
 
 
 			std::cout << " " << std::endl;
-			std::cout << "You have " << tries << " lives left!" << std::endl;
+			std::cout << "You have " << tries << " lives left!" << std::endl;*/
 
 			std::cout << " " << std::endl;
 			std::cout << "#2                   With which sport is Micheal Jordan associated?" << std::endl;
@@ -99,38 +136,6 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << "You have " << tries << " lives left!" << std::endl;
 			//Question 
-			std::cout << " " << std::endl;
-			std::cout << "#2                   With which sport is Micheal Jordan associated?" << std::endl;
-			std::cout << "A) Baseball" << std::endl;
-			std::cout << "B) Football" << std::endl;
-			std::cout << "C) Basketball" << std::endl;
-			std::cout << "D) Golf" << std::endl;
-			std::cin >> play;
-			if (play == "A" || "a")
-			{
-				std::cout << "Wrong! That is not the right answer" << std::endl;
-				tries--;
-				wrong_right++;
-			}
-			else if (play == "B" || "b")
-			{
-				std::cout << "Wrong! That is not the right answer" << std::endl;
-				tries--;
-				wrong_right++;
-			}
-			else if (play == "C" || "c")
-			{
-				std::cout << "Hurray! You got it right!" << std::endl;
-				right_wrong++;
-			}
-			else if (play == "D" || "d")
-			{
-				std::cout << "Wrong! That is not the right answer" << std::endl;
-				tries--;
-				wrong_right++;
-			}
-			std::cout << " " << std::endl;
-			std::cout << "You have " << tries << " lives left!" << std::endl;
 
 			break;
 
@@ -270,7 +275,3 @@ int main() {
 }
 
 
-int question1()
-{
-
-}
