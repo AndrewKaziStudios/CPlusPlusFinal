@@ -4,7 +4,7 @@
 int main() {
 
 
-	std::string Yes_No, answer;
+	std::string Yes_No, answer, name, answerM2, answerM3;
 	int tries = 5;
 
 
@@ -60,6 +60,8 @@ int main() {
 				wrong_right++;
 				
 			}
+
+
 			std::cout << " " << std::endl;
 			std::cout << "You have " << tries << " lives left!" << std::endl;
 
@@ -129,6 +131,123 @@ int main() {
 			}
 			std::cout << " " << std::endl;
 			std::cout << "You have " << tries << " lives left!" << std::endl;
+
+			break;
+
+			
+		case 'M':
+
+			std::cout << " " << std::endl;
+			std::cout << "In this level you have 5 lives to get all 8 question right." << std::endl;
+			std::cout << "       " << std::endl;
+			std::cout << " " << std::endl;
+			std::cout << " " << std::endl;
+			std::cout << " " << std::endl;
+
+
+			std::cout << " # 1) Name the world's largest island" << std::endl;
+			std::cout << " A) Madagascar" << std::endl;
+			std::cout << " B) Greenland " << std::endl;
+			std::cout << " C) United Kingdom" << std::endl;
+			std::cout << " D) Ireland" << std::endl;
+			std::cin >> name;
+			if (name == "B")
+			{
+				std::cout << "Good Job" << std::endl;
+				right_wrong++;
+			}
+
+			else if (name == "D")
+			{
+				std::cout << "Wrong answer" << std::endl;
+				tries--;
+				wrong_right++;
+			}
+			else if (name == "A")
+			{
+				std::cout << "Wrong answer" << std::endl;
+				tries--;
+				wrong_right++;
+			}
+
+			else if (name == "C")
+			{
+				std::cout << "Wrong answer" << std::endl;
+				tries--;
+				wrong_right++;
+			}
+			std::cout << " You have " << tries << " lives  left  " << std::endl;
+
+			std::cout << " " << std::endl;
+			std::cout << " # 2) How many U.S states border the Gulf of Mexico " << std::endl;
+			std::cout << " A) 4" << std::endl;
+			std::cout << " B) 5 " << std::endl;
+			std::cout << " C) 6" << std::endl;
+			std::cout << " D) 7" << std::endl;
+			std::cin >> answerM2;
+
+			if (answerM2 == "A")
+			{
+				std::cout << "Wrong Answer " << std::endl;
+				tries--;
+				wrong_right++;
+			}
+
+			else if (answerM2 == "B")
+			{
+				std::cout << " Right Answer " << std::endl;
+				right_wrong++;
+			}
+			else if (answerM2 == "C")
+			{
+				std::cout << "Wrong Answer " << std::endl;
+				tries--;
+				wrong_right++;
+			}
+			else if (answerM2 == "D")
+			{
+				std::cout << "Wrong Answer " << std::endl;
+				tries--;
+				wrong_right++;
+			}
+			std::cout << " You have " << tries << " lives  left  " << std::endl;
+
+
+			std::cout << " " << std::endl;
+			std::cout << " #3 What is the diameter of Earth" << std::endl;
+			std::cout << " A) 8,200 miles " << std::endl;
+			std::cout << " B) 7,000 miles " << std::endl; 
+			std::cout << " C) 8,500 miles " << std::endl;
+			std::cout << " D) 8,000 miles " << std::endl;
+			std::cin >> answerM3;
+
+			if (answerM3 == "A" || "a")
+			{
+				std::cout << "Wrong Answer " << std::endl;
+				tries--;
+				wrong_right++;
+			}
+
+			if (answerM3 == "B" || "b")
+			{
+				std::cout << "Wrong Answer " << std::endl;
+				tries--;
+				wrong_right++;
+			}
+
+			if (answerM3 == "C" || "c")
+			{
+				std::cout << "Wrong Answer " << std::endl;
+				tries--;
+				wrong_right++;
+			}
+
+			if (answerM3 == "D" || "d")
+			{
+				std::cout << " Good Job " << std::endl;
+				right_wrong++;
+			}
+			std::cout << " You have " << tries << " lives  left  " << std::endl;
 
 			break;
 
