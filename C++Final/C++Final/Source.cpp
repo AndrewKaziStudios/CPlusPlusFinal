@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-int question1()
+int question1() // Question 1
 {
 	
 	std::string play;
@@ -33,7 +33,7 @@ int question1()
 	return 0;
 }
 
-int question2()
+int question2() // Question 2
 {
 
 	std::string play;
@@ -47,7 +47,7 @@ int question2()
 
 	std::cout << "A) Baseball" << std::endl;
 	std::cout << "B) Football" << std::endl;
-	std::cout << "C) Basketball" << std::endl;
+	std::cout << "C) Basketball" << std::endl; // Correct answer
 	std::cout << "D) Golf" << std::endl;
 	std::cin >> play;
 
@@ -83,16 +83,16 @@ int question2()
 
 }
 
-int question3()
+int question3() // Question 3
 {
 	std::string name;
 	int tries = 5;
 	int right_wrong = 0;
 	int wrong_right = 0;
 
-	std::cout << " # 1) Name the world's largest island" << std::endl;
+	std::cout << " #3 Name the world's largest island" << std::endl;
 	std::cout << " A) Madagascar" << std::endl;
-	std::cout << " B) Greenland " << std::endl;
+	std::cout << " B) Greenland " << std::endl; // Correct answer
 	std::cout << " C) United Kingdom" << std::endl;
 	std::cout << " D) Ireland" << std::endl;
 	std::cin >> name;
@@ -125,7 +125,7 @@ int question3()
 	return 0;
 }
 
-int question4()
+int question4() // Question 4
 {
 	std::string answerM2;
 	int tries = 5;
@@ -169,9 +169,49 @@ int question4()
 }
 
 
-int	question5()
+int	question5() // Question 5
 {
+	std::string answerM3;
+	int tries = 5;
+	int right_wrong = 0;
+	int wrong_right = 0;
 
+	std::cout << " " << std::endl;
+	std::cout << " #5 What is the diameter of Earth" << std::endl;
+	std::cout << " A) 8,200 miles " << std::endl;
+	std::cout << " B) 7,000 miles " << std::endl;
+	std::cout << " C) 8,500 miles " << std::endl;
+	std::cout << " D) 8,000 miles " << std::endl;
+	std::cin >> answerM3;
+
+	if (answerM3 == "A" || "a")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	if (answerM3 == "B" || "b")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	if (answerM3 == "C" || "c")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	if (answerM3 == "D" || "d")
+	{
+		std::cout << " Good Job " << std::endl;
+		right_wrong++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	return 0;
 }
 int main() {
 
@@ -252,7 +292,7 @@ int main() {
 			
 		case 'M':
 			
-
+			
 			std::cout << " " << std::endl;
 			std::cout << "In this level you have 5 lives to get all 8 question right." << std::endl;
 			std::cout << "       " << std::endl;
@@ -261,11 +301,10 @@ int main() {
 			std::cout << " " << std::endl;
 
 			question3();
-			question4(); 
-			
 
 
-			std::cout << " " << std::endl;
+
+			/*std::cout << " " << std::endl;
 			std::cout << " #3 What is the diameter of Earth" << std::endl;
 			std::cout << " A) 8,200 miles " << std::endl;
 			std::cout << " B) 7,000 miles " << std::endl; 
@@ -299,7 +338,7 @@ int main() {
 				std::cout << " Good Job " << std::endl;
 				right_wrong++;
 			}
-			std::cout << " You have " << tries << " lives  left  " << std::endl;
+			std::cout << " You have " << tries << " lives  left  " << std::endl;*/
 
 			break;
 
