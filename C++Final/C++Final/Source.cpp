@@ -127,11 +127,45 @@ int question3() // Question 3
 
 int question4() // Question 4
 {
-	std::string name;
+	std::string answerM2;
 	int tries = 5;
 	int right_wrong = 0;
 	int wrong_right = 0;
 
+	std::cout << " " << std::endl;
+	std::cout << " #4 How many U.S states border the Gulf of Mexico " << std::endl;
+	std::cout << " A) 4" << std::endl;
+	std::cout << " B) 5 " << std::endl;
+	std::cout << " C) 6" << std::endl;
+	std::cout << " D) 7" << std::endl;
+	std::cin >> answerM2;
+
+	if (answerM2 == "A")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM2 == "B")
+	{
+		std::cout << " Right Answer " << std::endl;
+		right_wrong++;
+	}
+	else if (answerM2 == "C")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	else if (answerM2 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	return 0;
 }
 
 
@@ -268,41 +302,6 @@ int main() {
 
 			question3();
 
-	
-
-			std::cout << " " << std::endl;
-			std::cout << " # 2) How many U.S states border the Gulf of Mexico " << std::endl;
-			std::cout << " A) 4" << std::endl;
-			std::cout << " B) 5 " << std::endl;
-			std::cout << " C) 6" << std::endl;
-			std::cout << " D) 7" << std::endl;
-			std::cin >> answerM2;
-
-			if (answerM2 == "A")
-			{
-				std::cout << "Wrong Answer " << std::endl;
-				tries--;
-				wrong_right++;
-			}
-
-			else if (answerM2 == "B")
-			{
-				std::cout << " Right Answer " << std::endl;
-				right_wrong++;
-			}
-			else if (answerM2 == "C")
-			{
-				std::cout << "Wrong Answer " << std::endl;
-				tries--;
-				wrong_right++;
-			}
-			else if (answerM2 == "D")
-			{
-				std::cout << "Wrong Answer " << std::endl;
-				tries--;
-				wrong_right++;
-			}
-			std::cout << " You have " << tries << " lives  left  " << std::endl;
 
 
 			/*std::cout << " " << std::endl;
