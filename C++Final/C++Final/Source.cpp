@@ -16,7 +16,7 @@ int question1() // Question 1
 	std::string play;
 
 	std::cout << " " << std::endl;
-	std::cout << "#1                      Do you want to play this game?" << std::endl;
+	std::cout << "                       Do you want to play this game?" << std::endl;
 	std::cout << "A) Yes" << std::endl; // Correct answer
 	std::cout << "B) No" << std::endl;
 	std::cin >> play;
@@ -36,6 +36,7 @@ int question1() // Question 1
 
 	std::cout << " " << std::endl;
 	std::cout << "You have " << tries << " lives left!" << std::endl;
+	std::cout << " " << std::endl;
 	return 0;
 }
 
@@ -47,7 +48,7 @@ int question2() // Question 2
 	
 	
 	std::cout << " " << std::endl;
-	std::cout << "#2                   With which sport is Micheal Jordan associated?" << std::endl;
+	std::cout << "                    With which sport is Micheal Jordan associated?" << std::endl;
 
 	std::cout << "A) Football" << std::endl;
 	std::cout << "B) Basketball" << std::endl;
@@ -82,6 +83,7 @@ int question2() // Question 2
 
 	std::cout << " " << std::endl;
 	std::cout << "You have " << tries << " lives left!" << std::endl;
+	std::cout << " " << std::endl;
 	return 0;
 
 }
@@ -91,7 +93,7 @@ int question3() // Question 3
 	std::string name;
 
 
-	std::cout << " #3 Name the world's largest island" << std::endl;
+	std::cout << "                     What is the world's largest island?" << std::endl;
 	std::cout << " A) Madagascar" << std::endl;
 	std::cout << " B) Greenland " << std::endl; // Correct answer
 	std::cout << " C) United Kingdom" << std::endl;
@@ -123,6 +125,7 @@ int question3() // Question 3
 		wrong_right++;
 	}
 	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
 	return 0;
 }
 
@@ -132,7 +135,7 @@ int question4() // Question 4
 
 
 	std::cout << " " << std::endl;
-	std::cout << " #4 How many U.S states border the Gulf of Mexico " << std::endl;
+	std::cout << "                    How many U.S states border the Gulf of Mexico?" << std::endl;
 	std::cout << " A) 4" << std::endl;
 	std::cout << " B) 5 " << std::endl;
 	std::cout << " C) 6" << std::endl;
@@ -164,6 +167,7 @@ int question4() // Question 4
 		wrong_right++;
 	}
 	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
 	return 0;
 }
 
@@ -174,7 +178,7 @@ int	question5() // Question 5
 
 
 	std::cout << " " << std::endl;
-	std::cout << " #5 What is the diameter of Earth" << std::endl;
+	std::cout << "                    What is the diameter of Earth?" << std::endl;
 	std::cout << " A) 8,200 miles " << std::endl;
 	std::cout << " B) 7,000 miles " << std::endl;
 	std::cout << " C) 8,500 miles " << std::endl;
@@ -208,6 +212,7 @@ int	question5() // Question 5
 		right_wrong++;
 	}
 	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
 	return 0;
 }
 
@@ -220,6 +225,8 @@ int main() {
 	
 	std::string play;
 	int NUM_OF_TESTS = 10;
+	int EASYRANDOM = 5;
+//	int NUM_OF_TESTS = 10;
 	
 
 	std::cout << "Welcome TO:  " << std::endl;
@@ -256,13 +263,15 @@ int main() {
 			//question1();
 			//question2();
 
-			for (size_t i = 0; i < NUM_OF_TESTS; ++i)
+			for (size_t i = 0; i < EASYRANDOM; ++i)
 			{
-				switch (rand() % 3)
+				switch (rand() % 5)
 				{
 				case 0: question1(); break; 
 				case 1: question2(); break;
-			
+				case 2: question3(); break;
+				case 3: question4(); break;
+				case 4: question5(); break;
 				}
 			}
 			
