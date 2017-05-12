@@ -1,11 +1,13 @@
 #include <iostream>
 #include <string>
 
+
+
+int tries = 5;
 int question1() // Question 1
 {
 	
 	std::string play;
-	int tries = 5;
 	int right_wrong = 0;
 	int wrong_right = 0;
 
@@ -14,13 +16,13 @@ int question1() // Question 1
 	std::cout << "A) Yes" << std::endl; // Correct answer
 	std::cout << "B) No" << std::endl;
 	std::cin >> play;
-	if (play == "A" || "a")
+	if (play == "A")
 	{
 		std::cout << "Hurray! You got it right!" << std::endl;
 		right_wrong++;
 
 	}
-	else if (play == "B" || "b")
+	else if (play == "B")
 	{
 		std::cout << "Wrong! That is not the right answer" << std::endl;
 		tries--;
@@ -37,7 +39,6 @@ int question2() // Question 2
 {
 
 	std::string play;
-	int tries = 5;
 	int right_wrong = 0;
 	int wrong_right = 0;
 	
@@ -45,32 +46,31 @@ int question2() // Question 2
 	std::cout << " " << std::endl;
 	std::cout << "#2                   With which sport is Micheal Jordan associated?" << std::endl;
 
-	std::cout << "A) Baseball" << std::endl;
-	std::cout << "B) Football" << std::endl;
-	std::cout << "C) Basketball" << std::endl; // Correct answer
+	std::cout << "A) Football" << std::endl;
+	std::cout << "B) Basketball" << std::endl;
+	std::cout << "C) Baseball" << std::endl; 
 	std::cout << "D) Golf" << std::endl;
 	std::cin >> play;
 
-	if (play == "A" || "a")
+	if (play == "A")
 	{
 		std::cout << "Wrong! That is not the right answer" << std::endl;
 		tries--;
 		wrong_right++;
 	}
-	else if (play == "B" || "b")
+	else if (play == "B")
+	{
+			std::cout << "Right! You got it right!" << std::endl;
+			right_wrong++;
+	}
+	else if (play == "C")
 	{
 		std::cout << "Wrong! That is not the right answer" << std::endl;
 		tries--;
 		wrong_right++;
-	}
 
-	else if (play == "C" || "c")
-	{
-		std::cout << "Right! You got it right!" << std::endl;
-		right_wrong++;
 	}
-
-	else if (play == "D" || "d")
+	else if (play == "D")
 	{
 		std::cout << "Wrong! That is not the right answer" << std::endl;
 		tries--;
@@ -86,7 +86,6 @@ int question2() // Question 2
 int question3() // Question 3
 {
 	std::string name;
-	int tries = 5;
 	int right_wrong = 0;
 	int wrong_right = 0;
 
@@ -128,7 +127,6 @@ int question3() // Question 3
 int question4() // Question 4
 {
 	std::string answerM2;
-	int tries = 5;
 	int right_wrong = 0;
 	int wrong_right = 0;
 
@@ -172,7 +170,6 @@ int question4() // Question 4
 int	question5() // Question 5
 {
 	std::string answerM3;
-	int tries = 5;
 	int right_wrong = 0;
 	int wrong_right = 0;
 
@@ -217,9 +214,7 @@ int main() {
 
 
 	std::string Yes_No, answer, name, answerM2, answerM3;
-	int tries = 5;
-
-
+	
 	std::string play;
 	int right_wrong = 0;
 	int wrong_right = 0;
@@ -235,7 +230,7 @@ int main() {
 	std::cout << "To Play Type Yes! Type No to Quit!" << std::endl;
 	std::cin >> Yes_No;
 
-	if (Yes_No == "Yes" || "yes")
+	if (Yes_No == "Yes")
 	{
 		char difficulty = ' ';
 
