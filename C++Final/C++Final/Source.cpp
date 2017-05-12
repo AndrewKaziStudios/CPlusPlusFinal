@@ -433,7 +433,7 @@ int	question10() //Andrew
 	return 0;
 }
 
-int	question11() //Dipesh 
+int	question11() //Dipesh and down until 15
 {
 
 }
@@ -457,7 +457,7 @@ int	question15()
 
 }
 
-int	question16()
+int	question16() //Andrew and down until 20
 {
 
 }
@@ -525,7 +525,7 @@ int main() {
 			std::cout << " " << std::endl;
 			
 
-			for (size_t i = 0; i < EASYRANDOM; ++i)
+			for (size_t i = 0; i < EASYRANDOM; ++i) // Andrew
 			{
 				switch (rand() % 5)
 				{
@@ -550,12 +550,12 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-			for (size_t i = 0; i < MEDIUMRANDOM; ++i)
+			for (size_t i = 0; i < MEDIUMRANDOM; ++i) //Dipesh
 			{
 				switch (rand() % 5)
 				{
 				case 0:question1(); break; 
-				case 1:question2(); break;
+				case 1:question2(); break; 
 				case 2:question3(); break;
 				case 3:question4(); break;
 				case 4:question5(); break;
@@ -573,7 +573,7 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-			for (size_t i = 0; i < HARDRANDOM; ++i)
+			for (size_t i = 0; i < HARDRANDOM; ++i) //Monday
 			{
 				switch (rand() % 5)
 				{
