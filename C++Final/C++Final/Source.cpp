@@ -217,7 +217,44 @@ int	question5() // Question 5
 }
 int	question6()
 {
+	std::string answerM3;
+	std::cout << " " << std::endl;
+	std::cout << "             In the movie 'Toy Story' what is the name of the boy next door who blows up toys?" << std::endl;
+	std::cout << " A) Bob " << std::endl;
+	std::cout << " B) Luke " << std::endl;
+	std::cout << " C) James " << std::endl;
+	std::cout << " D) Sid " << std::endl;
+	std::cin >> answerM3;
 
+	if (answerM3 == "A")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM3 == "B")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM3 == "C")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM3 == "D")
+	{
+		std::cout << " Good Job " << std::endl;
+		right_wrong++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
+	return 0;
 }
 
 int	question7()
@@ -232,11 +269,86 @@ int	question8()
 
 int	question9()
 {
+	std::string answerM3;
+	std::cout << " " << std::endl;
+	std::cout << "          In Disney's 'Peter Pan', what flower is the Chiefs daughter named after?" << std::endl;
+	std::cout << " A) Tiger Lily" << std::endl;
+	std::cout << " B) Rose" << std::endl;
+	std::cout << " C)  Jasmine" << std::endl;
+	std::cout << " D) Daffodil " << std::endl;
+	std::cin >> answerM3;
 
+	if (answerM3 == "A")
+	{
+		std::cout << " Good Job " << std::endl;
+		right_wrong++;
+	}
+
+	else if (answerM3 == "B")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM3 == "C")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM3 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
+	return 0;
 }
 
-int	question10(){
+int	question10() //Andrew
+{
+	std::string answerM3;
+	std::cout << " " << std::endl;
+	std::cout << "          What two elements make up water?" << std::endl;
+	std::cout << " A) " << std::endl;
+	std::cout << " B) " << std::endl;
+	std::cout << " C) Hydrogen & oxygen" << std::endl;
+	std::cout << " D)  " << std::endl;
+	std::cin >> answerM3;
 
+	if (answerM3 == "A")
+	{
+		std::cout << " Good Job " << std::endl;
+		right_wrong++;
+	}
+
+	else if (answerM3 == "B")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM3 == "C")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM3 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
+	return 0;
 }
 
 int	question11()
@@ -330,8 +442,6 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			
-			//question1();
-			//question2();
 
 			for (size_t i = 0; i < EASYRANDOM; ++i)
 			{
