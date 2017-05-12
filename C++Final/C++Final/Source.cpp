@@ -4,12 +4,12 @@
 
 
 int tries = 5;
+int right_wrong = 0;
+int wrong_right = 0;
 int question1() // Question 1
 {
 	
 	std::string play;
-	int right_wrong = 0;
-	int wrong_right = 0;
 
 	std::cout << " " << std::endl;
 	std::cout << "#1                      Do you want to play this game?" << std::endl;
@@ -39,8 +39,7 @@ int question2() // Question 2
 {
 
 	std::string play;
-	int right_wrong = 0;
-	int wrong_right = 0;
+
 	
 	
 	std::cout << " " << std::endl;
@@ -86,8 +85,7 @@ int question2() // Question 2
 int question3() // Question 3
 {
 	std::string name;
-	int right_wrong = 0;
-	int wrong_right = 0;
+
 
 	std::cout << " #3 Name the world's largest island" << std::endl;
 	std::cout << " A) Madagascar" << std::endl;
@@ -127,8 +125,7 @@ int question3() // Question 3
 int question4() // Question 4
 {
 	std::string answerM2;
-	int right_wrong = 0;
-	int wrong_right = 0;
+
 
 	std::cout << " " << std::endl;
 	std::cout << " #4 How many U.S states border the Gulf of Mexico " << std::endl;
@@ -170,8 +167,7 @@ int question4() // Question 4
 int	question5() // Question 5
 {
 	std::string answerM3;
-	int right_wrong = 0;
-	int wrong_right = 0;
+
 
 	std::cout << " " << std::endl;
 	std::cout << " #5 What is the diameter of Earth" << std::endl;
@@ -219,8 +215,7 @@ int main() {
 	std::string Yes_No, answer, name, answerM2, answerM3;
 	
 	std::string play;
-	int right_wrong = 0;
-	int wrong_right = 0;
+
 	
 
 	std::cout << "Welcome TO:  " << std::endl;
@@ -247,44 +242,16 @@ int main() {
 		{
 
 		case 'E':
+			std::cout << " " << std::endl;
+			std::cout << "In this level you have 5 lives to get all 5 question right." << std::endl;
+			std::cout << "       " << std::endl;
+			std::cout << " " << std::endl;
+			std::cout << " " << std::endl;
+			std::cout << " " << std::endl;
 			
 			question1();
 			question2();
-			/*std::cout << " " << std::endl;
-			std::cout << "#2                   With which sport is Micheal Jordan associated?" << std::endl;
-			std::cout << "A) Baseball" << std::endl;
-			std::cout << "B) Football" << std::endl;
-			std::cout << "C) Basketball" << std::endl;
-			std::cout << "D) Golf" << std::endl;
-			std::cin >> play;
-			if (play == "A" || "a")
-			{
-				std::cout << "Wrong! That is not the right answer" << std::endl;
-				tries--;
-				wrong_right++;
-			}
-			else if (play == "B" || "b")
-			{
-				std::cout << "Wrong! That is not the right answer" << std::endl;
-				tries--;
-				wrong_right++;
-			}
-			else if (play == "C" || "c")
-			{
-				std::cout << "Hurray! You got it right!" << std::endl;
-				right_wrong++;
-			}
-			else if (play == "D" || "d")
-			{
-				std::cout << "Wrong! That is not the right answer" << std::endl;
-				tries--;
-				wrong_right++;
-			}
-
-			std::cout << " " << std::endl;
-			std::cout << "You have " << tries << " lives left!" << std::endl;*/
-			//Question 
-
+			
 			break;
 
 			
