@@ -259,12 +259,94 @@ int	question6()
 
 int	question7()
 {
+	std::string answerM7;
+
+
+	std::cout << " " << std::endl;
+	std::cout << "                    What is the capital of South Africa ?" << std::endl;
+	std::cout << " A) Cape Town  " << std::endl;
+	std::cout << " B) Johannesburg" << std::endl;
+	std::cout << " C) East London  " << std::endl;
+	std::cout << " D) Pretoria  " << std::endl;
+	std::cin >> answerM7;
+
+	if (answerM7 == "A")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM7 == "B")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM7 == "C")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM7 == "D")
+	{
+		std::cout << " Good Job " << std::endl;
+		right_wrong++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
+	return 0;
 
 }
 
 int	question8()
 {
+	std::string answerM8;
 
+
+	std::cout << " " << std::endl;
+	std::cout << "                The Linux operating system was created by which software engineer ?" << std::endl;
+	std::cout << " A) Linus Torvalds  " << std::endl;
+	std::cout << " B) Ken Thompson  " << std::endl;
+	std::cout << " C) Dennis Ritchie" << std::endl;
+	std::cout << " D) Steve Job" << std::endl;
+	std::cin >> answerM8;
+
+	if (answerM8 == "A")
+	{
+
+		std::cout << " Good Job " << std::endl;
+		right_wrong++;  
+
+	;
+	}
+
+	else if (answerM8 == "B")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM8 == "C")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM8 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
+	return 0;
 }
 
 int	question9()
@@ -351,7 +433,7 @@ int	question10() //Andrew
 	return 0;
 }
 
-int	question11()
+int	question11() //Dipesh 
 {
 
 }
