@@ -279,9 +279,18 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-			question3();
-			question4();
-			question5();
+			for (size_t i = 0; i < NUM_OF_TESTS; ++i)
+			{
+				switch (rand() % 5)
+				{
+				case 0:question1(); break; 
+				case 1:question2(); break;
+				case 2:question3(); break;
+				case 3:question4(); break;
+				case 4:question5(); break;
+				}
+			}
+			
 
 			break;
 
