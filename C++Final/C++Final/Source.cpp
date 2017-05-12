@@ -6,6 +6,10 @@
 int tries = 5;
 int right_wrong = 0;
 int wrong_right = 0;
+
+
+
+
 int question1() // Question 1
 {
 	
@@ -215,7 +219,7 @@ int main() {
 	std::string Yes_No, answer, name, answerM2, answerM3;
 	
 	std::string play;
-
+	int NUM_OF_TESTS = 10;
 	
 
 	std::cout << "Welcome TO:  " << std::endl;
@@ -249,8 +253,18 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			
-			question1();
-			question2();
+			//question1();
+			//question2();
+
+			for (size_t i = 0; i < NUM_OF_TESTS; ++i)
+			{
+				switch (rand() % 3)
+				{
+				case 0: question1(); break; 
+				case 1: question2(); break;
+			
+				}
+			}
 			
 			break;
 
