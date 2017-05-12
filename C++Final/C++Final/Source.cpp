@@ -184,28 +184,28 @@ int	question5() // Question 5
 	std::cout << " D) 8,000 miles " << std::endl;
 	std::cin >> answerM3;
 
-	if (answerM3 == "A" || "a")
+	if (answerM3 == "A")
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		tries--;
 		wrong_right++;
 	}
 
-	if (answerM3 == "B" || "b")
+	else if (answerM3 == "B" )
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		tries--;
 		wrong_right++;
 	}
 
-	if (answerM3 == "C" || "c")
+	else if (answerM3 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		tries--;
 		wrong_right++;
 	}
 
-	if (answerM3 == "D" || "d")
+	else if (answerM3 == "D" )
 	{
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
@@ -213,6 +213,9 @@ int	question5() // Question 5
 	std::cout << " You have " << tries << " lives  left  " << std::endl;
 	return 0;
 }
+
+
+
 int main() {
 
 
@@ -301,44 +304,8 @@ int main() {
 			std::cout << " " << std::endl;
 
 			question3();
-
-
-
-			/*std::cout << " " << std::endl;
-			std::cout << " #3 What is the diameter of Earth" << std::endl;
-			std::cout << " A) 8,200 miles " << std::endl;
-			std::cout << " B) 7,000 miles " << std::endl; 
-			std::cout << " C) 8,500 miles " << std::endl;
-			std::cout << " D) 8,000 miles " << std::endl;
-			std::cin >> answerM3;
-
-			if (answerM3 == "A" || "a")
-			{
-				std::cout << "Wrong Answer " << std::endl;
-				tries--;
-				wrong_right++;
-			}
-
-			if (answerM3 == "B" || "b")
-			{
-				std::cout << "Wrong Answer " << std::endl;
-				tries--;
-				wrong_right++;
-			}
-
-			if (answerM3 == "C" || "c")
-			{
-				std::cout << "Wrong Answer " << std::endl;
-				tries--;
-				wrong_right++;
-			}
-
-			if (answerM3 == "D" || "d")
-			{
-				std::cout << " Good Job " << std::endl;
-				right_wrong++;
-			}
-			std::cout << " You have " << tries << " lives  left  " << std::endl;*/
+			question4();
+			question5();
 
 			break;
 
