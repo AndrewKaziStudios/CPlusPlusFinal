@@ -294,9 +294,9 @@ int main() {
 	std::string Yes_No, answer, name, answerM2, answerM3;
 	
 	std::string play;
-	int NUM_OF_TESTS = 10;
-	int EASYRANDOM = 5;
-//	int NUM_OF_TESTS = 10;
+	int EASYRANDOM = 8;
+	int MEDIUMRANDOM = 10;
+	int HARDRANDOM = 15;
 	
 
 	std::cout << "Welcome TO:  " << std::endl;
@@ -324,7 +324,7 @@ int main() {
 
 		case 'E':
 			std::cout << " " << std::endl;
-			std::cout << "In this level you have 5 lives to get all 5 question right." << std::endl;
+			std::cout << "In this level you have 15 lives to get all 8 question right." << std::endl;
 			std::cout << "       " << std::endl;
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
@@ -352,13 +352,13 @@ int main() {
 			
 			
 			std::cout << " " << std::endl;
-			std::cout << "In this level you have 5 lives to get all 8 question right." << std::endl;
+			std::cout << "In this level you have 10 lives to get all 10 question right." << std::endl;
 			std::cout << "       " << std::endl;
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-			for (size_t i = 0; i < NUM_OF_TESTS; ++i)
+			for (size_t i = 0; i < MEDIUMRANDOM; ++i)
 			{
 				switch (rand() % 5)
 				{
@@ -372,6 +372,26 @@ int main() {
 			
 
 			break;
+		
+		case 'H':
+			std::cout << " " << std::endl;
+			std::cout << "In this level you have 5 lives to get all 15 question right." << std::endl;
+			std::cout << "       " << std::endl;
+			std::cout << " " << std::endl;
+			std::cout << " " << std::endl;
+			std::cout << " " << std::endl;
+
+			for (size_t i = 0; i < HARDRANDOM; ++i)
+			{
+				switch (rand() % 5)
+				{
+				case 0:question1(); break;
+				case 1:question2(); break;
+				case 2:question3(); break;
+				case 3:question4(); break;
+				case 4:question5(); break;
+				}
+			}
 
 
 
