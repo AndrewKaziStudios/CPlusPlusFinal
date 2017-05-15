@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
-
+#include <stdlib.h>
+#include <time.h>
 
 
 int tries = 5;
@@ -862,14 +863,15 @@ int	question20() // question20
 
 int main() {
 
-	char questiion[] = { (int)question1, (int)question2, (int)question3, (int)question4, (int)question5, (int)question6, (int)question7, (int)question8, (int)question9, (int)question10, (int)question11, (int)question12, (int)question13, (int)question14, (int)question15, (int)question16, (int)question17, (int)question18, (int)question19, (int)question20 };
+	srand(time(NULL)); //initialize the random seed
+
+	char question[20] = { (int)question1, (int)question2, (int)question3, (int)question4, (int)question5, (int)question6, (int)question7, (int)question8, (int)question9, (int)question10, (int)question11, (int)question12, (int)question13, (int)question14, (int)question15, (int)question16, (int)question17, (int)question18, (int)question19, (int)question20 };
+	int RandIndex = rand() % 19;
 
 	std::string Yes_No, answer, name, answerM2, answerM3;
 	
 	std::string play;
-	int EASYRANDOM = 8;
-	int MEDIUMRANDOM = 10;
-	int HARDRANDOM = 15;
+	
 	
 
 	std::cout << "Welcome TO:  " << std::endl;
@@ -903,11 +905,13 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			
-
-			for (size_t i = 0; i < EASYRANDOM; ++i)
+			
+			for (size_t i = 0; i < (int)question; ++i)
 			{
-				switch (rand() % 20)
+				switch (rand() % 19)
 				{
+
+
 				case 0: question1(); break; 
 				case 1: question2(); break;
 				case 2: question3(); break;
@@ -944,9 +948,9 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-			for (size_t i = 0; i < MEDIUMRANDOM; ++i)
+			for (size_t i = 0; i < (int)question; ++i)
 			{
-				switch (rand() % 20)
+				switch (rand() % 19)
 				{
 				case 0: question1(); break;
 				case 1: question2(); break;
@@ -982,9 +986,9 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-			for (size_t i = 0; i < HARDRANDOM; ++i)
+			for (size_t i = 0; i < (int)question; ++i)
 			{
-				switch (rand() % 20)
+				switch (rand() % 19)
 				{
 				case 0: question1(); break;
 				case 1: question2(); break;
