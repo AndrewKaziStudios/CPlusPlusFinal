@@ -435,26 +435,215 @@ int	question10() //Andrew
 
 int	question11() //Dipesh and down until 15
 {
+	std::string answerM11;
+	std::cout << " " << std::endl;
+	std::cout << "      Which is Earth's smallest ocean?   " << std::endl;
+	std::cout << " A) Arctic Ocean  " << std::endl; ///correct 
+	std::cout << " B) Atlantic Ocean " << std::endl;
+	std::cout << " C) Indian Ocean" << std::endl;
+	std::cout << " D) Southern Ocean " << std::endl;
+	std::cin >> answerM11;
 
+	if (answerM11 == "A")
+	{
+		std::cout << " Good Job " << std::endl;
+		right_wrong++;
+	}
+
+	else if (answerM11 == "B")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM11 == "C")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM11 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
+	return 0;
 }
 
 int	question12()
 {
+	std::string answerM12;
+	std::cout << " " << std::endl;
+	std::cout << "    A newton is a unit of what?     " << std::endl;
+	std::cout << " A) Enegry  " << std::endl;
+	std::cout << " B) Force  " << std::endl; ///correct 
+	std::cout << " C) Gravity" << std::endl;
+	std::cout << " D) Mass " << std::endl;
+	std::cin >> answerM12;
+
+	if (answerM12 == "A")
+	{
+		std::cout << " Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM12 == "B")
+	{
+		std::cout << " Correct  " << std::endl;
+	
+		right_wrong++;
+	}
+
+	else if (answerM12 == "C")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM12 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
+	return 0;
 
 }
 int	question13()
 {
+	std::string answerM13;
+	std::cout << " " << std::endl;
+	std::cout << "      How fast can bees fly?   " << std::endl;
+	std::cout << " A) 35 miles per hour" << std::endl;
+	std::cout << " B) 10 miles per hour" << std::endl;
+	std::cout << " C) 15 miles per hour" << std::endl;
+	std::cout << " D) 20 miles per hour " << std::endl;
+	std::cin >> answerM13;
 
+	if (answerM13 == "A")
+	{
+		std::cout << " Wrong Answer " << std::endl;
+		
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM13 == "B")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM13 == "C")
+	{
+		std::cout << " Good" << std::endl;
+		right_wrong++;
+	}
+
+	else if (answerM13 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
+	return 0;
 }
 
 int	question14()
 {
+	std::string answerM14;
+	std::cout << " " << std::endl;
+	std::cout << "    What is a second full moon in a month called     " << std::endl;
+	std::cout << " A) Blue Moon " << std::endl; //correct
+	std::cout << " B) Full Moon " << std::endl;
+	std::cout << " C) Lunar Eclipse" << std::endl;
+	std::cout << " D) Solar Eclipse " << std::endl;
+	std::cin >> answerM14;
 
+	if (answerM14 == "A")
+	{
+		std::cout << " Good Job " << std::endl;
+		right_wrong++;
+	}
+
+	else if (answerM14 == "B")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM14 == "C")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM14 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
+	return 0;
 }
 
 int	question15()
 {
+	std::string answerM15;
+	std::cout << " " << std::endl;
+	std::cout << "    Which country has won most World Cup?     " << std::endl;
+	std::cout << " A) Italy  " << std::endl;
+	std::cout << " B) France" << std::endl;
+	std::cout << " C) Germany" << std::endl;
+	std::cout << " D) Brazil" << std::endl;  // correct 
+	std::cin >> answerM15;
 
+	if (answerM15 == "A")
+	{
+		std::cout << " Wrong Job " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM15 == "B")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM15 == "C")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+
+	else if (answerM15 == "D")
+	{
+		std::cout << " Right Answer " << std::endl;
+	
+		right_wrong++;
+	}
+	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " " << std::endl;
+	return 0;
 }
 
 int	question16() //Andrew and down until 20
