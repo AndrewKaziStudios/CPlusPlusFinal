@@ -17,7 +17,8 @@ int question1() // Question 1
 	std::string play;
 
 	std::cout << " " << std::endl;
-	std::cout << "                       Do you want to play this game?" << std::endl;
+	std::cout << "Do you want to play this game?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << "A) Yes" << std::endl; // Correct
 	std::cout << "B) No" << std::endl;
 	std::cin >> play;
@@ -36,7 +37,7 @@ int question1() // Question 1
 	}
 
 	std::cout << " " << std::endl;
-	std::cout << "You have " << tries << " lives left!" << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -49,8 +50,8 @@ int question2() // Question 2
 	
 	
 	std::cout << " " << std::endl;
-	std::cout << "                    With which sport is Micheal Jordan associated?" << std::endl;
-
+	std::cout << "With which sport is Micheal Jordan associated?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << "A) Football" << std::endl;
 	std::cout << "B) Basketball" << std::endl; // Correct
 	std::cout << "C) Baseball" << std::endl; 
@@ -83,7 +84,7 @@ int question2() // Question 2
 	}
 
 	std::cout << " " << std::endl;
-	std::cout << "You have " << tries << " lives left!" << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 
@@ -94,7 +95,8 @@ int question3() // Question 3
 	std::string name;
 
 
-	std::cout << "                     What is the world's largest island?" << std::endl;
+	std::cout << "What is the world's largest island?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Madagascar" << std::endl;
 	std::cout << " B) Greenland " << std::endl; // Correct
 	std::cout << " C) United Kingdom" << std::endl;
@@ -125,7 +127,7 @@ int question3() // Question 3
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -136,7 +138,8 @@ int question4() // Question 4
 
 
 	std::cout << " " << std::endl;
-	std::cout << "                    How many U.S states border the Gulf of Mexico?" << std::endl;
+	std::cout << "How many U.S states border the Gulf of Mexico?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) 4" << std::endl;
 	std::cout << " B) 5 " << std::endl; // Correct
 	std::cout << " C) 6" << std::endl;
@@ -167,7 +170,7 @@ int question4() // Question 4
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -179,7 +182,8 @@ int	question5() // Question 5
 
 
 	std::cout << " " << std::endl;
-	std::cout << "                    What is the diameter of Earth?" << std::endl;
+	std::cout << "What is the diameter of Earth?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) 8,200 miles " << std::endl;
 	std::cout << " B) 7,000 miles " << std::endl;
 	std::cout << " C) 8,500 miles " << std::endl;
@@ -212,7 +216,7 @@ int	question5() // Question 5
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -220,7 +224,8 @@ int	question6()
 {
 	std::string answerM3;
 	std::cout << " " << std::endl;
-	std::cout << "             In the movie 'Toy Story' what is the name of the boy next door who blows up toys?" << std::endl;
+	std::cout << "In the movie 'Toy Story' what is the name of the boy next door who \nblows up toys?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Bob " << std::endl;
 	std::cout << " B) Luke " << std::endl;
 	std::cout << " C) James " << std::endl;
@@ -253,7 +258,7 @@ int	question6()
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -264,7 +269,8 @@ int	question7() // question7
 
 
 	std::cout << " " << std::endl;
-	std::cout << "                    What is the capital of South Africa?" << std::endl;
+	std::cout << "What is the capital of South Africa?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Cape Town" << std::endl;
 	std::cout << " B) Johannesburg" << std::endl;
 	std::cout << " C) East London" << std::endl;
@@ -297,7 +303,7 @@ int	question7() // question7
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 
@@ -309,7 +315,8 @@ int	question8() // question8
 
 
 	std::cout << " " << std::endl;
-	std::cout << "                The Linux operating system was created by which software engineer?" << std::endl;
+	std::cout << "The Linux operating system was created by which software engineer?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Linus Torvalds" << std::endl; // Correct
 	std::cout << " B) Ken Thompson" << std::endl;
 	std::cout << " C) Dennis Ritchie" << std::endl;
@@ -345,7 +352,7 @@ int	question8() // question8
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -354,7 +361,8 @@ int	question9() // question9
 {
 	std::string answerM3;
 	std::cout << " " << std::endl;
-	std::cout << "          In Disney's 'Peter Pan', what flower is the Chiefs daughter named after?" << std::endl;
+	std::cout << "In Disney's 'Peter Pan', what flower is the\n Chiefs daughter named after?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Tiger Lily" << std::endl; // Correct
 	std::cout << " B) Rose" << std::endl;
 	std::cout << " C) Jasmine" << std::endl;
@@ -387,7 +395,7 @@ int	question9() // question9
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -396,7 +404,8 @@ int	question10() // question10
 {
 	std::string answerM3;
 	std::cout << " " << std::endl;
-	std::cout << "          What two elements make up water?" << std::endl;
+	std::cout << "What two elements make up water?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Helium & Oxygen" << std::endl;
 	std::cout << " B) Monoxide & Hydrogen" << std::endl;
 	std::cout << " C) Hydrogen & Oxygen" << std::endl; // Correct
@@ -429,7 +438,7 @@ int	question10() // question10
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -438,7 +447,8 @@ int	question11() // question11
 {
 	std::string answerM11;
 	std::cout << " " << std::endl;
-	std::cout << "      Which is Earth's smallest ocean?   " << std::endl;
+	std::cout << "Which is Earth's smallest ocean?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Arctic Ocean  " << std::endl; ///correct 
 	std::cout << " B) Atlantic Ocean " << std::endl;
 	std::cout << " C) Indian Ocean" << std::endl;
@@ -471,7 +481,7 @@ int	question11() // question11
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -480,7 +490,8 @@ int	question12() // question12
 {
 	std::string answerM12;
 	std::cout << " " << std::endl;
-	std::cout << "    A newton is a unit of what?     " << std::endl;
+	std::cout << "A newton is a unit of what?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Enegry  " << std::endl;
 	std::cout << " B) Force  " << std::endl; ///correct 
 	std::cout << " C) Gravity" << std::endl;
@@ -514,7 +525,7 @@ int	question12() // question12
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 
@@ -523,10 +534,11 @@ int	question13() // question13
 {
 	std::string answerM13;
 	std::cout << " " << std::endl;
-	std::cout << "      How fast can bees fly?   " << std::endl;
+	std::cout << "How fast can bees fly?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) 35 miles per hour" << std::endl;
 	std::cout << " B) 10 miles per hour" << std::endl;
-	std::cout << " C) 15 miles per hour" << std::endl;
+	std::cout << " C) 15 miles per hour" << std::endl; //correct
 	std::cout << " D) 20 miles per hour " << std::endl;
 	std::cin >> answerM13;
 
@@ -547,7 +559,7 @@ int	question13() // question13
 
 	else if (answerM13 == "C")
 	{
-		std::cout << " Good" << std::endl;
+		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
 
@@ -557,7 +569,7 @@ int	question13() // question13
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -566,7 +578,8 @@ int	question14() // question14
 {
 	std::string answerM14;
 	std::cout << " " << std::endl;
-	std::cout << "    What is a second full moon in a month called     " << std::endl;
+	std::cout << "What is a second full moon in a month called?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Blue Moon " << std::endl; //correct
 	std::cout << " B) Full Moon " << std::endl;
 	std::cout << " C) Lunar Eclipse" << std::endl;
@@ -599,7 +612,7 @@ int	question14() // question14
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -608,7 +621,8 @@ int	question15() // question15
 {
 	std::string answerM15;
 	std::cout << " " << std::endl;
-	std::cout << "    Which country has won most World Cup?     " << std::endl;
+	std::cout << "Which country has won most World Cup?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Italy  " << std::endl;
 	std::cout << " B) France" << std::endl;
 	std::cout << " C) Germany" << std::endl;
@@ -617,7 +631,7 @@ int	question15() // question15
 
 	if (answerM15 == "A")
 	{
-		std::cout << " Wrong Job " << std::endl;
+		std::cout << " Wrong Answer " << std::endl;
 		tries--;
 		wrong_right++;
 	}
@@ -638,11 +652,11 @@ int	question15() // question15
 
 	else if (answerM15 == "D")
 	{
-		std::cout << " Right Answer " << std::endl;
-	
+		std::cout << " Good Job " << std::endl;
+
 		right_wrong++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -651,7 +665,8 @@ int	question16() // question16
 {
 	std::string answerM3;
 	std::cout << " " << std::endl;
-	std::cout << "          What is a wallaby?" << std::endl;
+	std::cout << "What is a wallaby?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Kangaroo" << std::endl; // Correct
 	std::cout << " B) A type of drink" << std::endl;
 	std::cout << " C) A piece of fruit" << std::endl; 
@@ -684,7 +699,7 @@ int	question16() // question16
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -693,7 +708,8 @@ int	question17() // question17
 {
 	std::string answerM3;
 	std::cout << " " << std::endl;
-	std::cout << "           What is the Canadian dollar coin called?" << std::endl;
+	std::cout << "What is the Canadian dollar coin called?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Euro" << std::endl; 
 	std::cout << " B) Rupee" << std::endl;
 	std::cout << " C) Yen" << std::endl;
@@ -726,7 +742,7 @@ int	question17() // question17
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -735,7 +751,8 @@ int	question18() // question18
 {
 	std::string answerM3;
 	std::cout << " " << std::endl;
-	std::cout << "           The color orange is named after the fruit?" << std::endl;
+	std::cout << "The color orange is named after the fruit." << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " T) True" << std::endl; // Correct
 	std::cout << " F) False" << std::endl; 
 	std::cin >> answerM3;
@@ -753,7 +770,7 @@ int	question18() // question18
 		wrong_right++;
 	}
 
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -762,7 +779,8 @@ int	question19() // question19
 {
 	std::string answerM3;
 	std::cout << " " << std::endl;
-	std::cout << "          What are the six weapons in a standard game of Clue?" << std::endl;
+	std::cout << "What are the six weapons in a standard game of Clue?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Candlestick, Lead Pipe, Knife, Poison, Sword, and a Pitchfork" << std::endl;
 	std::cout << " B) Rope, Wrench, Flamethrower, Pistol, Shotgun, and a Knife" << std::endl;
 	std::cout << " C) Candlestick, Lead Pipe, Knife, Revolver, Rope, and a Wrench" << std::endl; // Correct
@@ -795,7 +813,7 @@ int	question19() // question19
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
@@ -804,7 +822,8 @@ int	question20() // question20
 {
 	std::string answerM3;
 	std::cout << "         " << std::endl;
-	std::cout << "              What animal guards the cave of Caerbannog in 'Monty Python and the Holy Grail'?" << std::endl;
+	std::cout << "What animal guards the cave of Caerbannog in\n 'Monty Python and the Holy Grail'?" << std::endl;
+	std::cout << " " << std::endl;
 	std::cout << " A) Rabbit" << std::endl; // Correct
 	std::cout << " B) Snake" << std::endl;
 	std::cout << " C) Dragon" << std::endl; 
@@ -837,7 +856,7 @@ int	question20() // question20
 		tries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives  left  " << std::endl;
+	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
 }
