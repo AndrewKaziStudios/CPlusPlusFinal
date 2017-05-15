@@ -843,6 +843,7 @@ int	question20() // question20
 
 int main() {
 
+	char questiion[] = { (int)question1, (int)question2, (int)question3, (int)question4, (int)question5, (int)question6, (int)question7, (int)question8, (int)question9, (int)question10, (int)question11, (int)question12, (int)question13, (int)question14, (int)question15, (int)question16, (int)question17, (int)question18, (int)question19, (int)question20 };
 
 	std::string Yes_No, answer, name, answerM2, answerM3;
 	
