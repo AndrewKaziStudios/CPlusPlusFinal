@@ -859,20 +859,21 @@ int	question20() // question20
 	return 0;
 }
 
+
 int main() {
 
 	srand(time(NULL)); //initialize the random seed
-
 	char question[20] = { (int)question1, (int)question2, (int)question3, (int)question4, (int)question5, (int)question6, (int)question7, (int)question8, (int)question9, (int)question10, (int)question11, (int)question12, (int)question13, (int)question14, (int)question15, (int)question16, (int)question17, (int)question18, (int)question19, (int)question20 };
-	///int RandIndex = rand() % 19;
 
 	std::string Yes_No, answer, name, answerM2, answerM3;
-	
 	std::string play;
-	int playername;
+	
+	int playerName;
 
-	std::cout << "Please Enter the name " << std::endl;
-	std::cin >> playername;
+	std::cout << "Please enter your name or initials: ";
+	std::cin >> playerName;
+
+
 
 	std::cout << "Welcome TO:  " << std::endl;
 	std::cout << " " << std::endl;
@@ -900,16 +901,17 @@ int main() {
 		{
 
 		case 'E':
+			
 			do {
+				
 			std::cout << " " << std::endl;
 			std::cout << "In this level you have 15 lives to get all 8 question right." << std::endl;
-			std::cout << "       " << std::endl;
+			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			
 			
-
 				for (size_t i = 0; i < (int)question; ++i)
 				{
 					switch (rand() % 19)
