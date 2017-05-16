@@ -908,8 +908,6 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
-			
-			do{
 
 				for (size_t i = 0; i < (int)question; ++i)
 				{
@@ -939,9 +937,10 @@ int main() {
 					case 19: question20(); break;
 					}
 				}
-			} while (tries == 0);
+
+
 			{
-				std::cout << " Game over " << std::endl;
+				
 			}
 			break;
 
