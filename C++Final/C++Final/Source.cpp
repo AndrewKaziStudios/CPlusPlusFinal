@@ -868,10 +868,10 @@ int main() {
 	std::string Yes_No, answer, name, answerM2, answerM3;
 	std::string play;
 	
-	int playerName;
+	//int playerName;
 
-	std::cout << "Please enter your name or initials: ";
-	std::cin >> playerName;
+	//std::cout << "Please enter your name or initials: ";
+	//std::cin >> playerName;
 
 
 
@@ -901,9 +901,7 @@ int main() {
 		{
 
 		case 'E':
-			
-			do {
-				
+							
 			std::cout << " " << std::endl;
 			std::cout << "In this level you have 15 lives to get all 8 question right." << std::endl;
 			std::cout << " " << std::endl;
@@ -911,7 +909,8 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			
-			
+			do{
+
 				for (size_t i = 0; i < (int)question; ++i)
 				{
 					switch (rand() % 19)
