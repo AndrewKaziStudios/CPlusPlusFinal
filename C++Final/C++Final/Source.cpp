@@ -941,6 +941,9 @@ int main() {
 					}
 				}
 			} while (tries == 0);
+			{
+				std::cout << " Game over " << std::endl;
+			}
 			break;
 
 			
