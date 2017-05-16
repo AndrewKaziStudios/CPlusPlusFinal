@@ -33,7 +33,12 @@ int question1() // Question 1
 		wrong_right++;
 
 	}
-
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " " << std::endl;
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
@@ -80,7 +85,12 @@ int question2() // Question 2
 		tries--;
 		wrong_right++;
 	}
-
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " " << std::endl;
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
@@ -125,6 +135,12 @@ int question3() // Question 3
 		tries--;
 		wrong_right++;
 	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
@@ -163,6 +179,12 @@ int question4() // Question 4
 		wrong_right++;
 	}
 	else if (answerM2 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	else
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		tries--;
@@ -214,6 +236,12 @@ int	question5() // Question 5
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
@@ -255,6 +283,12 @@ int	question6()
 	{
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
+	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
 	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
@@ -300,6 +334,12 @@ int	question7() // question7
 	{
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
+	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
 	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
@@ -350,6 +390,12 @@ int	question8() // question8
 		tries--;
 		wrong_right++;
 	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
@@ -388,6 +434,12 @@ int	question9() // question9
 	}
 
 	else if (answerM3 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	else
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		tries--;
@@ -436,6 +488,12 @@ int	question10() // question10
 		tries--;
 		wrong_right++;
 	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
@@ -474,6 +532,12 @@ int	question11() // question11
 	}
 
 	else if (answerM11 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	else
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		tries--;
@@ -523,6 +587,12 @@ int	question12() // question12
 		tries--;
 		wrong_right++;
 	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
@@ -567,6 +637,12 @@ int	question13() // question13
 		tries--;
 		wrong_right++;
 	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
@@ -605,6 +681,12 @@ int	question14() // question14
 	}
 
 	else if (answerM14 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	else
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		tries--;
@@ -654,6 +736,12 @@ int	question15() // question15
 
 		right_wrong++;
 	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
@@ -692,6 +780,12 @@ int	question16() // question16
 	}
 
 	else if (answerM3 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	else
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		tries--;
@@ -740,6 +834,12 @@ int	question17() // question17
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
@@ -767,7 +867,12 @@ int	question18() // question18
 		tries--;
 		wrong_right++;
 	}
-
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
@@ -811,6 +916,12 @@ int	question19() // question19
 		tries--;
 		wrong_right++;
 	}
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
 	std::cout << " You have " << tries << " lives left!" << std::endl;
 	std::cout << " " << std::endl;
 	return 0;
@@ -849,6 +960,12 @@ int	question20() // question20
 	}
 
 	else if (answerM3 == "D")
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		tries--;
+		wrong_right++;
+	}
+	else
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		tries--;
@@ -901,20 +1018,18 @@ int main() {
 		{
 
 		case 'E':
-							
-			std::cout << " " << std::endl;
-			std::cout << "In this level you have 15 lives to get all 8 question right." << std::endl;
-			std::cout << " " << std::endl;
-			std::cout << " " << std::endl;
-			std::cout << " " << std::endl;
-			std::cout << " " << std::endl;
+			do{
+				std::cout << " " << std::endl;
+				std::cout << "In this level you have 15 lives to get all 8 question right." << std::endl;
+				std::cout << " " << std::endl;
+				std::cout << " " << std::endl;
+				std::cout << " " << std::endl;
+				std::cout << " " << std::endl;
 
 				for (size_t i = 0; i < (int)question; ++i)
 				{
 					switch (rand() % 19)
 					{
-
-
 					case 0: question1(); break;
 					case 1: question2(); break;
 					case 2: question3(); break;
@@ -937,12 +1052,9 @@ int main() {
 					case 19: question20(); break;
 					}
 				}
-
-
-			{
-				
-			}
+			
 			break;
+			} while (right_wrong == 8);
 
 			
 		case 'M':
@@ -955,33 +1067,32 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-			for (size_t i = 0; i < (int)question; ++i)
-			{
-				switch (rand() % 19)
+				for (size_t i = 0; i < (int)question; ++i)
 				{
-				case 0: question1(); break;
-				case 1: question2(); break;
-				case 2: question3(); break;
-				case 3: question4(); break;
-				case 4: question5(); break;
-				case 5: question6(); break;
-				case 6: question7(); break;
-				case 7: question8(); break;
-				case 8: question9(); break;
-				case 9: question10(); break;
-				case 10: question11(); break;
-				case 11: question12(); break;
-				case 12: question13(); break;
-				case 13: question14(); break;
-				case 14: question15(); break;
-				case 15: question16(); break;
-				case 16: question17(); break;
-				case 17: question18(); break;
-				case 18: question19(); break;
-				case 19: question20(); break;
+					switch (rand() % 19)
+					{
+					case 0: question1(); break;
+					case 1: question2(); break;
+					case 2: question3(); break;
+					case 3: question4(); break;
+					case 4: question5(); break;
+					case 5: question6(); break;
+					case 6: question7(); break;
+					case 7: question8(); break;
+					case 8: question9(); break;
+					case 9: question10(); break;
+					case 10: question11(); break;
+					case 11: question12(); break;
+					case 12: question13(); break;
+					case 13: question14(); break;
+					case 14: question15(); break;
+					case 15: question16(); break;
+					case 16: question17(); break;
+					case 17: question18(); break;
+					case 18: question19(); break;
+					case 19: question20(); break;
+					}
 				}
-			}
-			
 
 			break;
 		
