@@ -9,8 +9,6 @@ int right_wrong = 0;
 int wrong_right = 0;
 
 
-
-
 int question1() // Question 1
 {
 	
@@ -866,13 +864,15 @@ int main() {
 	srand(time(NULL)); //initialize the random seed
 
 	char question[20] = { (int)question1, (int)question2, (int)question3, (int)question4, (int)question5, (int)question6, (int)question7, (int)question8, (int)question9, (int)question10, (int)question11, (int)question12, (int)question13, (int)question14, (int)question15, (int)question16, (int)question17, (int)question18, (int)question19, (int)question20 };
-	int RandIndex = rand() % 19;
+	///int RandIndex = rand() % 19;
 
 	std::string Yes_No, answer, name, answerM2, answerM3;
 	
 	std::string play;
-	
-	
+	int playername;
+
+	std::cout << "Please Enter the name " << std::endl;
+	std::cin >> playername;
 
 	std::cout << "Welcome TO:  " << std::endl;
 	std::cout << " " << std::endl;
@@ -880,9 +880,11 @@ int main() {
 	std::cout << "            THE " << std::endl;
 	std::cout << "          _______!" << std::endl;
 
+
 	std::cout << " " << std::endl;
 	std::cout << "To Play Type Yes! Type No to Quit!" << std::endl;
 	std::cin >> Yes_No;
+
 
 	if (Yes_No == "Yes")
 	{
