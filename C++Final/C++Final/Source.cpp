@@ -979,9 +979,22 @@ int	question20() // question20
 
 int main() {
 
+	int Ecounter = 0;
+
 	srand(time(NULL)); //initialize the random seed
 	char question[20] = { (int)question1, (int)question2, (int)question3, (int)question4, (int)question5, (int)question6, (int)question7, (int)question8, (int)question9, (int)question10, (int)question11, (int)question12, (int)question13, (int)question14, (int)question15, (int)question16, (int)question17, (int)question18, (int)question19, (int)question20 };
 
+	int EasyTries = 0;
+	/*int MediumTries = 10;
+	int HardTries = 5;
+
+	tries = EasyTries;
+	tries = MediumTries;
+	tries = HardTries;*/
+
+	int EASYRANDOM = 8;
+	int MEDIUMRANDOM = 10;
+	int HARDRANDOM = 15;
 	std::string Yes_No, answer, name, answerM2, answerM3;
 	std::string play;
 	
@@ -1018,43 +1031,42 @@ int main() {
 		{
 
 		case 'E':
-			do{
 				std::cout << " " << std::endl;
-				std::cout << "In this level you have 15 lives to get all 8 question right." << std::endl;
+				std::cout << "In this level you have 8 lives to get all 8 question right." << std::endl;
 				std::cout << " " << std::endl;
 				std::cout << " " << std::endl;
 				std::cout << " " << std::endl;
 				std::cout << " " << std::endl;
 
-				for (size_t i = 0; i < (int)question; ++i)
+				while(Ecounter = 8)
 				{
-					switch (rand() % 19)
-					{
-					case 0: question1(); break;
-					case 1: question2(); break;
-					case 2: question3(); break;
-					case 3: question4(); break;
-					case 4: question5(); break;
-					case 5: question6(); break;
-					case 6: question7(); break;
-					case 7: question8(); break;
-					case 8: question9(); break;
-					case 9: question10(); break;
-					case 10: question11(); break;
-					case 11: question12(); break;
-					case 12: question13(); break;
-					case 13: question14(); break;
-					case 14: question15(); break;
-					case 15: question16(); break;
-					case 16: question17(); break;
-					case 17: question18(); break;
-					case 18: question19(); break;
-					case 19: question20(); break;
-					}
-				}
-			
-			break;
-			} while (right_wrong == 8);
+						switch (rand() % 19)
+						{
+						case 0: question1(); break;
+						case 1: question2(); break;
+						case 2: question3(); break;
+						case 3: question4(); break;
+						case 4: question5(); break;
+						case 5: question6(); break;
+						case 6: question7(); break;
+						case 7: question8(); break;
+						case 8: question9(); break;
+						case 9: question10(); break;
+						case 10: question11(); break;
+						case 11: question12(); break;
+						case 12: question13(); break;
+						case 13: question14(); break;
+						case 14: question15(); break;
+						case 15: question16(); break;
+						case 16: question17(); break;
+						case 17: question18(); break;
+						case 18: question19(); break;
+						case 19: question20(); break;
+						}
+						Ecounter = Ecounter + 1;
+				} while (tries > EASYRANDOM || tries >= 0);
+					break;
+				
 
 			
 		case 'M':
@@ -1067,7 +1079,7 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-				for (size_t i = 0; i < (int)question; ++i)
+				for (size_t i = 0; i < MEDIUMRANDOM; ++i)
 				{
 					switch (rand() % 19)
 					{
@@ -1092,6 +1104,7 @@ int main() {
 					case 18: question19(); break;
 					case 19: question20(); break;
 					}
+
 				}
 
 			break;
@@ -1104,7 +1117,7 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-			for (size_t i = 0; i < (int)question; ++i)
+			for (size_t i = 0; i < HARDRANDOM; ++i)
 			{
 				switch (rand() % 19)
 				{
