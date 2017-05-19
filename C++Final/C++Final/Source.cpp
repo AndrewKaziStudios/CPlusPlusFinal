@@ -5,8 +5,13 @@
 
 
 int tries = 5;
+int EasyTries = 8;
+int MediumTries = 10;
+int HardTries = 5;
 int right_wrong = 0;
 int wrong_right = 0;
+
+
 
 
 int question1() // Question 1
@@ -29,14 +34,20 @@ int question1() // Question 1
 	else if (play == "B")
 	{
 		std::cout << "Wrong! That is not the right answer" << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 
 	}
-
-	std::cout << " " << std::endl;
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -59,7 +70,9 @@ int question2() // Question 2
 	if (play == "A")
 	{
 		std::cout << "Wrong! That is not the right answer" << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 	else if (play == "B")
@@ -70,20 +83,28 @@ int question2() // Question 2
 	else if (play == "C")
 	{
 		std::cout << "Wrong! That is not the right answer" << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 
 	}
 	else if (play == "D")
 	{
 		std::cout << "Wrong! That is not the right answer" << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-
-	std::cout << " " << std::endl;
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 
 }
@@ -109,24 +130,34 @@ int question3() // Question 3
 	else if (name == "D")
 	{
 		std::cout << "Wrong answer" << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 	else if (name == "A")
 	{
 		std::cout << "Wrong answer" << std::endl;
-		tries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (name == "C")
 	{
 		std::cout << "Wrong answer" << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -147,7 +178,9 @@ int question4() // Question 4
 	if (answerM2 == "A")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
@@ -159,17 +192,27 @@ int question4() // Question 4
 	else if (answerM2 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 	else if (answerM2 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -191,21 +234,27 @@ int	question5() // Question 5
 	if (answerM3 == "A")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "B" )
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
@@ -214,8 +263,14 @@ int	question5() // Question 5
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 int	question6()
@@ -233,21 +288,27 @@ int	question6()
 	if (answerM3 == "A")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
@@ -256,8 +317,14 @@ int	question6()
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -278,21 +345,27 @@ int	question7() // question7
 	if (answerM7 == "A")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM7 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM7 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
@@ -301,8 +374,14 @@ int	question7() // question7
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 
 }
@@ -326,32 +405,42 @@ int	question8() // question8
 
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;  
-
-	;
 	}
 
 	else if (answerM8 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM8 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM8 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -376,25 +465,37 @@ int	question9() // question9
 	else if (answerM3 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -413,14 +514,18 @@ int	question10() // question10
 	if (answerM3 == "A")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
@@ -433,11 +538,19 @@ int	question10() // question10
 	else if (answerM3 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -462,25 +575,37 @@ int	question11() // question11
 	else if (answerM11 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM11 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM11 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -499,7 +624,9 @@ int	question12() // question12
 	if (answerM12 == "A")
 	{
 		std::cout << " Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
@@ -513,18 +640,28 @@ int	question12() // question12
 	else if (answerM12 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM12 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 
 }
@@ -543,15 +680,18 @@ int	question13() // question13
 	if (answerM13 == "A")
 	{
 		std::cout << " Wrong Answer " << std::endl;
-		
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM13 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
@@ -564,11 +704,19 @@ int	question13() // question13
 	else if (answerM13 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -593,25 +741,37 @@ int	question14() // question14
 	else if (answerM14 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM14 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM14 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -630,32 +790,43 @@ int	question15() // question15
 	if (answerM15 == "A")
 	{
 		std::cout << " Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM15 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM15 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM15 == "D")
 	{
 		std::cout << " Good Job " << std::endl;
-
 		right_wrong++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -680,25 +851,37 @@ int	question16() // question16
 	else if (answerM3 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -717,21 +900,27 @@ int	question17() // question17
 	if (answerM3 == "A")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
@@ -740,8 +929,14 @@ int	question17() // question17
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -764,12 +959,19 @@ int	question18() // question18
 	else if (answerM3 == "F")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -788,14 +990,18 @@ int	question19() // question19
 	if (answerM3 == "A")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
@@ -808,11 +1014,19 @@ int	question19() // question19
 	else if (answerM3 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
@@ -837,43 +1051,57 @@ int	question20() // question20
 	else if (answerM3 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
 
 	else if (answerM3 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
-		tries--;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
 		wrong_right++;
 	}
-	std::cout << " You have " << tries << " lives left!" << std::endl;
-	std::cout << " " << std::endl;
+	else
+	{
+		std::cout << "Wrong Answer " << std::endl;
+		EasyTries--;
+		MediumTries--;
+		HardTries--;
+		wrong_right++;
+	}
 	return 0;
 }
 
 
 int main() {
 
+	int Ecounter = 0;
+
 	srand(time(NULL)); //initialize the random seed
 	char question[20] = { (int)question1, (int)question2, (int)question3, (int)question4, (int)question5, (int)question6, (int)question7, (int)question8, (int)question9, (int)question10, (int)question11, (int)question12, (int)question13, (int)question14, (int)question15, (int)question16, (int)question17, (int)question18, (int)question19, (int)question20 };
 
-	std::string Yes_No, answer, name, answerM2, answerM3;
-	std::string play;
+
 	
-	//int playerName;
-
-	//std::cout << "Please enter your name or initials: ";
-	//std::cin >> playerName;
-
-
+	int playerName;
+	int EASYRANDOM = 8;
+	int MEDIUMRANDOM = 10;
+	int HARDRANDOM = 15;
+	std::string Yes_No, answer, name, answerM2, answerM3;
+	std::string play, PlayAgain;
+	
 
 	std::cout << "Welcome TO:  " << std::endl;
 	std::cout << " " << std::endl;
@@ -901,48 +1129,67 @@ int main() {
 		{
 
 		case 'E':
-							
-			std::cout << " " << std::endl;
-			std::cout << "In this level you have 15 lives to get all 8 question right." << std::endl;
-			std::cout << " " << std::endl;
-			std::cout << " " << std::endl;
-			std::cout << " " << std::endl;
-			std::cout << " " << std::endl;
+				std::cout << " " << std::endl;
+				std::cout << "In this level you have 8 lives to get all 8 question right." << std::endl;
+				std::cout << " " << std::endl;
+				std::cout << " " << std::endl;
+				std::cout << " " << std::endl;
+				std::cout << " " << std::endl;
 
-				for (size_t i = 0; i < (int)question; ++i)
+				for (size_t i = 0; i < EASYRANDOM;)
 				{
-					switch (rand() % 19)
+					do{
+
+						if (EasyTries > 0 && i < EASYRANDOM)
+						{
+							++i;
+							switch (rand() % 19)
+							{
+							case 0: question1(); break;
+							case 1: question2(); break;
+							case 2: question3(); break;
+							case 3: question4(); break;
+							case 4: question5(); break;
+							case 5: question6(); break;
+							case 6: question7(); break;
+							case 7: question8(); break;
+							case 8: question9(); break;
+							case 9: question10(); break;
+							case 10: question11(); break;
+							case 11: question12(); break;
+							case 12: question13(); break;
+							case 13: question14(); break;
+							case 14: question15(); break;
+							case 15: question16(); break;
+							case 16: question17(); break;
+							case 17: question18(); break;
+							case 18: question19(); break;
+							case 19: question20(); break;
+							}
+							std::cout << " You have " << EasyTries << " lives left!" << std::endl;
+							std::cout << " " << std::endl;
+						}
+					} while (EasyTries >= 0 && i < EASYRANDOM);
+					std::cout << "" << std::endl;
+					std::cout << "Good Job! You got " << right_wrong << "/8 right." << std::endl;
+					std::cout << "You missed " << wrong_right << " question(s)" << std::endl;
+					std::cout << "" << std::endl;
+					std::cout << "Please enter your name or initials to be put on the leader board: ";
+					std::cin >> playerName;
+
+					std::cout << "Do you want to play again? ";
+					std::cin >> PlayAgain;
+
+					if (PlayAgain == "Yes")
 					{
-
-
-					case 0: question1(); break;
-					case 1: question2(); break;
-					case 2: question3(); break;
-					case 3: question4(); break;
-					case 4: question5(); break;
-					case 5: question6(); break;
-					case 6: question7(); break;
-					case 7: question8(); break;
-					case 8: question9(); break;
-					case 9: question10(); break;
-					case 10: question11(); break;
-					case 11: question12(); break;
-					case 12: question13(); break;
-					case 13: question14(); break;
-					case 14: question15(); break;
-					case 15: question16(); break;
-					case 16: question17(); break;
-					case 17: question18(); break;
-					case 18: question19(); break;
-					case 19: question20(); break;
+						main();
+					}
+					else
+					{
+						exit(EXIT_FAILURE);
 					}
 				}
-
-
-			{
-				
-			}
-			break;
+				break;
 
 			
 		case 'M':
@@ -955,34 +1202,59 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-			for (size_t i = 0; i < (int)question; ++i)
-			{
-				switch (rand() % 19)
+				for (size_t i = 0; i < MEDIUMRANDOM;)
 				{
-				case 0: question1(); break;
-				case 1: question2(); break;
-				case 2: question3(); break;
-				case 3: question4(); break;
-				case 4: question5(); break;
-				case 5: question6(); break;
-				case 6: question7(); break;
-				case 7: question8(); break;
-				case 8: question9(); break;
-				case 9: question10(); break;
-				case 10: question11(); break;
-				case 11: question12(); break;
-				case 12: question13(); break;
-				case 13: question14(); break;
-				case 14: question15(); break;
-				case 15: question16(); break;
-				case 16: question17(); break;
-				case 17: question18(); break;
-				case 18: question19(); break;
-				case 19: question20(); break;
-				}
-			}
-			
+					do{
+						
+						if (MediumTries > 0 && i < MEDIUMRANDOM)
+						{
+							++i;
+							switch (rand() % 19)
+							{
+							case 0: question1(); break;
+							case 1: question2(); break;
+							case 2: question3(); break;
+							case 3: question4(); break;
+							case 4: question5(); break;
+							case 5: question6(); break;
+							case 6: question7(); break;
+							case 7: question8(); break;
+							case 8: question9(); break;
+							case 9: question10(); break;
+							case 10: question11(); break;
+							case 11: question12(); break;
+							case 12: question13(); break;
+							case 13: question14(); break;
+							case 14: question15(); break;
+							case 15: question16(); break;
+							case 16: question17(); break;
+							case 17: question18(); break;
+							case 18: question19(); break;
+							case 19: question20(); break;
+							}
+							std::cout << " You have " << MediumTries << " lives left!" << std::endl;
+							std::cout << " " << std::endl;
+						}
+					} while (MediumTries >= 0 && i < MEDIUMRANDOM);
+					std::cout << "" << std::endl;
+					std::cout << "Good Job! You got " << right_wrong << "/10 right." << std::endl;
+					std::cout << "You missed " << wrong_right << " question(s)" << std::endl;
+					std::cout << "" << std::endl;
+					std::cout << "Please enter your name or initials to be put on the leader board: ";
+					std::cin >> playerName;
 
+					std::cout << "Do you want to play again? ";
+					std::cin >> PlayAgain;
+
+					if (PlayAgain == "Yes")
+					{
+						main();
+					}
+					else
+					{
+						exit(EXIT_FAILURE);
+					}
+				}
 			break;
 		
 		case 'H':
@@ -993,38 +1265,61 @@ int main() {
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 
-			for (size_t i = 0; i < (int)question; ++i)
+			for (size_t i = 0; i < HARDRANDOM;)
 			{
-				switch (rand() % 19)
+				do{
+
+					if (HardTries > 0 && i < HARDRANDOM)
+					{
+						++i;
+						switch (rand() % 19)
+						{
+						case 0: question1(); break;
+						case 1: question2(); break;
+						case 2: question3(); break;
+						case 3: question4(); break;
+						case 4: question5(); break;
+						case 5: question6(); break;
+						case 6: question7(); break;
+						case 7: question8(); break;
+						case 8: question9(); break;
+						case 9: question10(); break;
+						case 10: question11(); break;
+						case 11: question12(); break;
+						case 12: question13(); break;
+						case 13: question14(); break;
+						case 14: question15(); break;
+						case 15: question16(); break;
+						case 16: question17(); break;
+						case 17: question18(); break;
+						case 18: question19(); break;
+						case 19: question20(); break;
+						}
+						std::cout << " You have " << HardTries << " lives left!" << std::endl;
+						std::cout << " " << std::endl;
+					}
+				} while (HardTries >= 0 && i < HARDRANDOM);
+				std::cout << "" << std::endl;
+				std::cout << "Good Job! You got " << right_wrong << "/15 right." << std::endl;
+				std::cout << "You missed " << wrong_right << " question(s)" << std::endl;
+				std::cout << "" << std::endl;
+				std::cout << "Please enter your name or initials\nto be put on the leader board: ";
+				std::cin >> playerName;
+
+				std::cout << "Do you want to play again? ";
+				std::cin >> PlayAgain;
+
+				if (PlayAgain == "Yes")
 				{
-				case 0: question1(); break;
-				case 1: question2(); break;
-				case 2: question3(); break;
-				case 3: question4(); break;
-				case 4: question5(); break;
-				case 5: question6(); break;
-				case 6: question7(); break;
-				case 7: question8(); break;
-				case 8: question9(); break;
-				case 9: question10(); break;
-				case 10: question11(); break;
-				case 11: question12(); break;
-				case 12: question13(); break;
-				case 13: question14(); break;
-				case 14: question15(); break;
-				case 15: question16(); break;
-				case 16: question17(); break;
-				case 17: question18(); break;
-				case 18: question19(); break;
-				case 19: question20(); break;
+					main();
+				}
+				else
+				{
+					exit(EXIT_FAILURE);
 				}
 			}
-
-
-
+			break;
 		}
-
-
 	}
 
 
