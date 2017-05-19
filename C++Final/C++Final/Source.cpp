@@ -20,18 +20,18 @@ int question1() // Question 1
 	std::string play;
 
 	std::cout << " " << std::endl;
-	std::cout << "Do you want to play this game?" << std::endl;
+	std::cout << "Lightning never strikes in the same place twice." << std::endl;
 	std::cout << " " << std::endl;
-	std::cout << "A) Yes" << std::endl; // Correct
-	std::cout << "B) No" << std::endl;
+	std::cout << "T) True" << std::endl; // Correct
+	std::cout << "F) False" << std::endl;
 	std::cin >> play;
-	if (play == "A")
+	if (play == "T")
 	{
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 
 	}
-	else if (play == "B")
+	else if (play == "F")
 	{
 		std::cout << "Wrong! That is not the right answer" << std::endl;
 		EasyTries--;
