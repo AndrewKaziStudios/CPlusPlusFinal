@@ -565,7 +565,7 @@ int	question11() // question11
 	if (answerM11 == "A")
 	{
 		std::cout << " Good Job " << std::endl;
-		right_wrong++;
+		right_wrong++; 
 	}
 
 	else if (answerM11 == "B")
@@ -973,7 +973,7 @@ int	question18() // question18
 
 int	question19() // question19
 {
-	std::string answerM3;
+	std::string answerM19;
 	std::cout << " " << std::endl;
 	std::cout << "What are the six weapons in a standard game of Clue?" << std::endl;
 	std::cout << " " << std::endl;
@@ -981,9 +981,9 @@ int	question19() // question19
 	std::cout << " B) Rope, Wrench, Flamethrower, Pistol, Shotgun, and a Knife" << std::endl;
 	std::cout << " C) Candlestick, Lead Pipe, Knife, Revolver, Rope, and a Wrench" << std::endl; // Correct
 	std::cout << " D) Axe, Pickaxe, Spear, Blowgun, Rope, and a Club" << std::endl; 
-	std::cin >> answerM3;
+	std::cin >> answerM19;
 
-	if (answerM3 == "A")
+	if (answerM19 == "A")
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		EasyTries--;
@@ -992,7 +992,7 @@ int	question19() // question19
 		wrong_right++;
 	}
 
-	else if (answerM3 == "B")
+	else if (answerM19 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		EasyTries--;
@@ -1001,13 +1001,13 @@ int	question19() // question19
 		wrong_right++;
 	}
 
-	else if (answerM3 == "C")
+	else if (answerM19 == "C")
 	{
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
 
-	else if (answerM3 == "D")
+	else if (answerM19 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		EasyTries--;
@@ -1028,7 +1028,7 @@ int	question19() // question19
 
 int	question20() // question20
 {
-	std::string answerM3;
+	std::string answerM20;
 	std::cout << "         " << std::endl;
 	std::cout << "What animal guards the cave of Caerbannog in\n 'Monty Python and the Holy Grail'?" << std::endl;
 	std::cout << " " << std::endl;
@@ -1036,15 +1036,15 @@ int	question20() // question20
 	std::cout << " B) Snake" << std::endl;
 	std::cout << " C) Dragon" << std::endl; 
 	std::cout << " D) Chicken" << std::endl;
-	std::cin >> answerM3;
+	std::cin >> answerM20;
 
-	if (answerM3 == "A")
+	if (answerM20 == "A")
 	{
 		std::cout << " Good Job " << std::endl;
 		right_wrong++;
 	}
 
-	else if (answerM3 == "B")
+	else if (answerM20 == "B")
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		EasyTries--;
@@ -1053,7 +1053,7 @@ int	question20() // question20
 		wrong_right++;
 	}
 
-	else if (answerM3 == "C")
+	else if (answerM20 == "C")
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		EasyTries--;
@@ -1062,7 +1062,7 @@ int	question20() // question20
 		wrong_right++;
 	}
 
-	else if (answerM3 == "D")
+	else if (answerM20 == "D")
 	{
 		std::cout << "Wrong Answer " << std::endl;
 		EasyTries--;
@@ -1080,7 +1080,7 @@ int	question20() // question20
 	}
 	return 0;
 }
-int PlayerName()
+int PlayerName()  ///Player Input their name to lederboard 
 {
 	std::string playerName;
 	std::cout << "Please enter your name or initials to be put on the leader board: ";
@@ -1093,7 +1093,7 @@ int main() {
 
 	
 
-	int Ecounter = 0;
+	int Ecounter = 0;  ///Counter function 
 
 	srand(time(NULL)); //initialize the random seed
 	char question[20] = { (int)question1, (int)question2, (int)question3, (int)question4, (int)question5, (int)question6, (int)question7, (int)question8, (int)question9, (int)question10, (int)question11, (int)question12, (int)question13, (int)question14, (int)question15, (int)question16, (int)question17, (int)question18, (int)question19, (int)question20 };
@@ -1150,7 +1150,7 @@ int main() {
 							++i;
 							switch (rand() % 19)
 							{
-							case 0: question1(); break;
+							case 0: question1(); break;  ///Call all the function from 1 to 20  Random order 
 							case 1: question2(); break;
 							case 2: question3(); break;
 							case 3: question4(); break;
@@ -1214,7 +1214,7 @@ int main() {
 						if (MediumTries > 0 && i < MEDIUMRANDOM)
 						{
 							++i;
-							switch (rand() % 19)
+							switch (rand() % 19)  ///Call all the function from 1 to 20 Random order 
 							{
 							case 0: question1(); break;
 							case 1: question2(); break;
@@ -1274,7 +1274,7 @@ int main() {
 			{
 				do{
 
-					if (HardTries > 0 && i < HARDRANDOM)
+					if (HardTries > 0 && i < HARDRANDOM)  ///Call all the function from 1 to 20  Random order 
 					{
 						++i;
 						switch (rand() % 19)
