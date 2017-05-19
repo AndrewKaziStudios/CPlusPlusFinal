@@ -5,19 +5,17 @@
 #include <fstream>
 
 
-int tries = 5;
-int EasyTries = 8;
-int MediumTries = 10;
-int HardTries = 5;
-int right_wrong = 0;
-int wrong_right = 0;
+int EasyTries = 8; // Lives for easy
+int MediumTries = 10; // Lives for medium
+int HardTries = 5; // Lives for hard
+int right_wrong = 0; // Keeps track of how many they get right
+int wrong_right = 0; // Keeps track of how many they get wrong
 
 
 
 
 int question1() // Question 1
 {
-	
 	std::string play;
 
 	std::cout << " " << std::endl;
@@ -34,7 +32,7 @@ int question1() // Question 1
 	}
 	else if (play == "F")
 	{
-		std::cout << "Wrong! That is not the right answer" << std::endl;
+		std::cout << "Wrong Answer" << std::endl;
 		EasyTries--;
 		MediumTries--;
 		HardTries--;
@@ -43,7 +41,7 @@ int question1() // Question 1
 	}
 	else
 	{
-		std::cout << "Wrong Answer " << std::endl;
+		std::cout << "Wrong Answer" << std::endl;
 		EasyTries--;
 		MediumTries--;
 		HardTries--;
@@ -54,13 +52,10 @@ int question1() // Question 1
 
 int question2() // Question 2
 {
-
 	std::string play;
 
-	
-	
 	std::cout << " " << std::endl;
-	std::cout << "With which sport is Micheal Jordan associated?" << std::endl;
+	std::cout << "With which sport is Michael Jordan associated?" << std::endl;
 	std::cout << " " << std::endl;
 	std::cout << "A) Football" << std::endl;
 	std::cout << "B) Basketball" << std::endl; // Correct
@@ -70,7 +65,7 @@ int question2() // Question 2
 
 	if (play == "A")
 	{
-		std::cout << "Wrong! That is not the right answer" << std::endl;
+		std::cout << "Wrong Answer" << std::endl;
 		EasyTries--;
 		MediumTries--;
 		HardTries--;
@@ -78,12 +73,12 @@ int question2() // Question 2
 	}
 	else if (play == "B")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Good Job" << std::endl;
 		right_wrong++;
 	}
 	else if (play == "C")
 	{
-		std::cout << "Wrong! That is not the right answer" << std::endl;
+		std::cout << "Wrong Answer" << std::endl;
 		EasyTries--;
 		MediumTries--;
 		HardTries--;
@@ -92,7 +87,7 @@ int question2() // Question 2
 	}
 	else if (play == "D")
 	{
-		std::cout << "Wrong! That is not the right answer" << std::endl;
+		std::cout << "Wrong Answer" << std::endl;
 		EasyTries--;
 		MediumTries--;
 		HardTries--;
@@ -100,7 +95,7 @@ int question2() // Question 2
 	}
 	else
 	{
-		std::cout << "Wrong Answer " << std::endl;
+		std::cout << "Wrong Answer" << std::endl;
 		EasyTries--;
 		MediumTries--;
 		HardTries--;
@@ -130,7 +125,7 @@ int question3() // Question 3
 
 	else if (name == "D")
 	{
-		std::cout << "Wrong answer" << std::endl;
+		std::cout << "Wrong Answer" << std::endl;
 		EasyTries--;
 		MediumTries--;
 		HardTries--;
@@ -138,14 +133,14 @@ int question3() // Question 3
 	}
 	else if (name == "A")
 	{
-		std::cout << "Wrong answer" << std::endl;
+		std::cout << "Wrong Answer" << std::endl;
 		HardTries--;
 		wrong_right++;
 	}
 
 	else if (name == "C")
 	{
-		std::cout << "Wrong answer" << std::endl;
+		std::cout << "Wrong Answer" << std::endl;
 		EasyTries--;
 		MediumTries--;
 		HardTries--;
@@ -153,7 +148,7 @@ int question3() // Question 3
 	}
 	else
 	{
-		std::cout << "Wrong Answer " << std::endl;
+		std::cout << "Wrong Answer" << std::endl;
 		EasyTries--;
 		MediumTries--;
 		HardTries--;
@@ -559,7 +554,7 @@ int	question11() // question11
 {
 	std::string answerM11;
 	std::cout << " " << std::endl;
-	std::cout << "Which is Earth's smallest ocean?" << std::endl;
+	std::cout << "What is the World's smallest ocean?" << std::endl;
 	std::cout << " " << std::endl;
 	std::cout << " A) Arctic Ocean  " << std::endl; ///correct 
 	std::cout << " B) Atlantic Ocean " << std::endl;
@@ -780,7 +775,7 @@ int	question15() // question15
 {
 	std::string answerM15;
 	std::cout << " " << std::endl;
-	std::cout << "Which country has won most World Cup?" << std::endl;
+	std::cout << "Which country has won the most World Cup?" << std::endl;
 	std::cout << " " << std::endl;
 	std::cout << " A) Italy  " << std::endl;
 	std::cout << " B) France" << std::endl;
@@ -1087,11 +1082,9 @@ int	question20() // question20
 }
 int PlayerName()  ///Player Input their name to lederboard 
 {
-	//std::ofstream text("Text.txt");
-
 	std::string playerName;
 	std::cout << "Please enter your name or initials to be put on the leader board: ";
-	std::cin >>  playerName;
+	std::cin >> playerName;
 
 	return 0;
 }
@@ -1152,7 +1145,7 @@ int main() {
 				{
 					do{
 
-						if (EasyTries > 0 && i < EASYRANDOM)
+						if (EasyTries > 0 && i < EASYRANDOM) 
 						{
 							++i;
 							switch (rand() % 19)
@@ -1188,13 +1181,13 @@ int main() {
 					std::cout << "" << std::endl;
 					PlayerName();
 
-					std::cout << "Do you want to play again?  Yes Or No  ";
+					std::cout << "Do you want to play again? Yes Or No  ";
 					std::cin >> PlayAgain;
 					std::cout << " " << std::endl;
 
 					if (PlayAgain == "Yes")
 					{
-						main();
+						main(); //Calls the main function
 					}
 					else
 					{
@@ -1254,7 +1247,7 @@ int main() {
 					std::cout << "" << std::endl;
 					PlayerName();
 
-					std::cout << "Do you want to play again?   Yes Or No ";
+					std::cout << "Do you want to play again? Yes Or No ";
 					std::cin >> PlayAgain;
 					std::cout << " " << std::endl;
 
@@ -1317,7 +1310,7 @@ int main() {
 				std::cout << "" << std::endl;
 				PlayerName();
 
-				std::cout << "Do you want to play again?  Yes Or No  ";
+				std::cout << "Do you want to play again? Yes Or No  ";
 				std::cin >> PlayAgain;
 				std::cout << " " << std::endl;
 
@@ -1337,7 +1330,7 @@ int main() {
 
 	else
 	{
-		exit(EXIT_FAILURE);
+		exit(EXIT_FAILURE);  //Exits the program
 	}
 
 
