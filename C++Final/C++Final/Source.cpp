@@ -1117,9 +1117,9 @@ int main() {
 
 	std::cout << "Welcome TO:  " << std::endl;
 	std::cout << " " << std::endl;
-	std::cout << "           GUESS" << std::endl;
-	std::cout << "            THE " << std::endl;
-	std::cout << "          _______!" << std::endl;
+	std::cout << "           Lets" << std::endl;
+	std::cout << "             Take a  " << std::endl;
+	std::cout << "                Quiz!" << std::endl;
 
 
 	std::cout << " " << std::endl;
