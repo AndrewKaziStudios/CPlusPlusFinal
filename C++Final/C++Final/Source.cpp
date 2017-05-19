@@ -1084,7 +1084,14 @@ int	question20() // question20
 	}
 	return 0;
 }
+int PlayerName()
+{
+	std::string playerName;
+	std::cout << "Please enter your name or initials to be put on the leader board: ";
+	std::cin >> playerName;
 
+	return 0;
+}
 
 int main() {
 
@@ -1174,11 +1181,11 @@ int main() {
 					std::cout << "Good Job! You got " << right_wrong << "/8 right." << std::endl;
 					std::cout << "You missed " << wrong_right << " question(s)" << std::endl;
 					std::cout << "" << std::endl;
-					std::cout << "Please enter your name or initials to be put on the leader board: ";
-					std::cin >> playerName;
+					PlayerName();
 
 					std::cout << "Do you want to play again? ";
 					std::cin >> PlayAgain;
+					std::cout << " " << std::endl;
 
 					if (PlayAgain == "Yes")
 					{
@@ -1240,11 +1247,11 @@ int main() {
 					std::cout << "Good Job! You got " << right_wrong << "/10 right." << std::endl;
 					std::cout << "You missed " << wrong_right << " question(s)" << std::endl;
 					std::cout << "" << std::endl;
-					std::cout << "Please enter your name or initials to be put on the leader board: ";
-					std::cin >> playerName;
+					PlayerName();
 
 					std::cout << "Do you want to play again? ";
 					std::cin >> PlayAgain;
+					std::cout << " " << std::endl;
 
 					if (PlayAgain == "Yes")
 					{
@@ -1303,11 +1310,11 @@ int main() {
 				std::cout << "Good Job! You got " << right_wrong << "/15 right." << std::endl;
 				std::cout << "You missed " << wrong_right << " question(s)" << std::endl;
 				std::cout << "" << std::endl;
-				std::cout << "Please enter your name or initials\nto be put on the leader board: ";
-				std::cin >> playerName;
+				PlayerName();
 
 				std::cout << "Do you want to play again? ";
 				std::cin >> PlayAgain;
+				std::cout << " " << std::endl;
 
 				if (PlayAgain == "Yes")
 				{
