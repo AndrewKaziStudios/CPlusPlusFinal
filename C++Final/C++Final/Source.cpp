@@ -1183,7 +1183,7 @@ int main() {
 					std::cout << "" << std::endl;
 					PlayerName();
 
-					std::cout << "Do you want to play again? ";
+					std::cout << "Do you want to play again?  Yes Or No  ";
 					std::cin >> PlayAgain;
 					std::cout << " " << std::endl;
 
@@ -1249,7 +1249,7 @@ int main() {
 					std::cout << "" << std::endl;
 					PlayerName();
 
-					std::cout << "Do you want to play again? ";
+					std::cout << "Do you want to play again?   Yes Or No ";
 					std::cin >> PlayAgain;
 					std::cout << " " << std::endl;
 
@@ -1312,7 +1312,7 @@ int main() {
 				std::cout << "" << std::endl;
 				PlayerName();
 
-				std::cout << "Do you want to play again? ";
+				std::cout << "Do you want to play again?  Yes Or No  ";
 				std::cin >> PlayAgain;
 				std::cout << " " << std::endl;
 
