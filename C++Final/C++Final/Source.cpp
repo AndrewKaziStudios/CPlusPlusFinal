@@ -13,6 +13,7 @@ int wrong_right = 0;
 
 
 
+
 int question1() // Question 1
 {
 	
@@ -1099,13 +1100,8 @@ int main() {
 	int MEDIUMRANDOM = 10;
 	int HARDRANDOM = 15;
 	std::string Yes_No, answer, name, answerM2, answerM3;
-	std::string play;
+	std::string play, PlayAgain;
 	
-	
-
-
-
-
 
 	std::cout << "Welcome TO:  " << std::endl;
 	std::cout << " " << std::endl;
@@ -1180,7 +1176,18 @@ int main() {
 					std::cout << "" << std::endl;
 					std::cout << "Please enter your name or initials to be put on the leader board: ";
 					std::cin >> playerName;
-					std::cout << "Do you want to play";
+
+					std::cout << "Do you want to play again? ";
+					std::cin >> PlayAgain;
+
+					if (PlayAgain == "Yes")
+					{
+						main();
+					}
+					else
+					{
+						exit(EXIT_FAILURE);
+					}
 				}
 				break;
 
@@ -1235,6 +1242,18 @@ int main() {
 					std::cout << "" << std::endl;
 					std::cout << "Please enter your name or initials to be put on the leader board: ";
 					std::cin >> playerName;
+
+					std::cout << "Do you want to play again? ";
+					std::cin >> PlayAgain;
+
+					if (PlayAgain == "Yes")
+					{
+						main();
+					}
+					else
+					{
+						exit(EXIT_FAILURE);
+					}
 				}
 			break;
 		
@@ -1286,6 +1305,18 @@ int main() {
 				std::cout << "" << std::endl;
 				std::cout << "Please enter your name or initials\nto be put on the leader board: ";
 				std::cin >> playerName;
+
+				std::cout << "Do you want to play again? ";
+				std::cin >> PlayAgain;
+
+				if (PlayAgain == "Yes")
+				{
+					main();
+				}
+				else
+				{
+					exit(EXIT_FAILURE);
+				}
 			}
 			break;
 		}
