@@ -2,6 +2,7 @@
 #include <string>
 #include <stdlib.h>
 #include <time.h>
+#include <fstream>
 
 
 int tries = 5;
@@ -1086,14 +1087,18 @@ int	question20() // question20
 }
 int PlayerName()
 {
+	//std::ofstream text("Text.txt");
+
 	std::string playerName;
 	std::cout << "Please enter your name or initials to be put on the leader board: ";
-	std::cin >> playerName;
+	std::cin >>  playerName;
 
 	return 0;
 }
 
 int main() {
+
+	
 
 	int Ecounter = 0;
 
