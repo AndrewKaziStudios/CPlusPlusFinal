@@ -1086,11 +1086,11 @@ int PlayerName()  //Player Input their name to lederboard
 	std::cout << "Please enter your name or initials to be put on the leader board: ";
 	std::cin >> playerName;
 
-	std::ofstream myfile("highScore.txt");
+	std::ofstream myfile("highScore.txt", std::ios_base::app | std::ios_base::out);
 	if (myfile.is_open())
 	{
 		myfile << playerName << " " << right_wrong << " " << difficulty << "\n";
-		myfile << right_wrong << "\n";
+		myfile << std::endl;
 		myfile.close();
 	}
 	else std::cout << "Unable to open file";
@@ -1117,11 +1117,12 @@ int main() {
 	std::string play, PlayAgain;
 	
 
-	std::cout << "Welcome TO:  " << std::endl;
+	std::cout << "Welcome To:  " << std::endl;
 	std::cout << " " << std::endl;
 	std::cout << "           Lets" << std::endl;
 	std::cout << "             Take a  " << std::endl;
 	std::cout << "                Quiz!" << std::endl;
+
 
 
 	std::cout << " " << std::endl;
@@ -1187,6 +1188,7 @@ int main() {
 					std::cout << "You missed " << wrong_right << " question(s)." << std::endl;
 					std::cout << "" << std::endl;
 					PlayerName();
+					
 
 					std::cout << "Do you want to play again? Yes Or No?";
 					std::cin >> PlayAgain;
@@ -1194,6 +1196,11 @@ int main() {
 
 					if (PlayAgain == "Yes")
 					{
+						EasyTries = 8; 
+						MediumTries = 10;
+						HardTries = 5;
+						wrong_right = 0;
+						right_wrong = 0;
 						main(); //Calls the main function
 					}
 					else
@@ -1260,6 +1267,11 @@ int main() {
 
 					if (PlayAgain == "Yes")
 					{
+						EasyTries = 8;
+						MediumTries = 10;
+						HardTries = 5;
+						wrong_right = 0;
+						right_wrong = 0;
 						main();
 					}
 					else
@@ -1323,6 +1335,11 @@ int main() {
 
 				if (PlayAgain == "Yes")
 				{
+					EasyTries = 8;
+					MediumTries = 10;
+					HardTries = 5;
+					wrong_right = 0;
+					right_wrong = 0;
 					main();
 				}
 				else
