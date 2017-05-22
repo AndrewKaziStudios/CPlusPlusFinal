@@ -10,7 +10,7 @@ int MediumTries = 10; // Lives for medium
 int HardTries = 5; // Lives for hard
 int right_wrong = 0; // Keeps track of how many they get right
 int wrong_right = 0; // Keeps track of how many they get wrong
-
+char difficulty = toupper(difficulty);
 
 
 
@@ -1086,7 +1086,16 @@ int PlayerName()  //Player Input their name to lederboard
 	std::cout << "Please enter your name or initials to be put on the leader board: ";
 	std::cin >> playerName;
 
+	std::ofstream myfile("highScore.txt");
+	if (myfile.is_open())
+	{
+		myfile << playerName << " " << right_wrong << " " << difficulty << "\n";
+		myfile << right_wrong << "\n";
+		myfile.close();
+	}
+	else std::cout << "Unable to open file";
 	return 0;
+
 }
 
 int main() {
@@ -1122,13 +1131,10 @@ int main() {
 
 	if (Yes_No == "Yes")
 	{
-		char difficulty = ' ';
-
 		std::cout << " " << std::endl;
 		std::cout << "Thank you for playing." << std::endl;
 		std::cout << "Please chose a difficulty: Easy = E, Medium = M, Hard = H." << std::endl;
 		std::cin >> difficulty;
-		difficulty = toupper(difficulty);
 		
 		switch (difficulty)
 		{
@@ -1175,13 +1181,14 @@ int main() {
 							std::cout << " " << std::endl;
 						}
 					} while (EasyTries >= 0 && i < EASYRANDOM);
+
 					std::cout << "" << std::endl;
 					std::cout << "Good Job! You got " << right_wrong << "/8 right." << std::endl;
-					std::cout << "You missed " << wrong_right << " question(s)" << std::endl;
+					std::cout << "You missed " << wrong_right << " question(s)." << std::endl;
 					std::cout << "" << std::endl;
 					PlayerName();
 
-					std::cout << "Do you want to play again? Yes Or No  ";
+					std::cout << "Do you want to play again? Yes Or No?";
 					std::cin >> PlayAgain;
 					std::cout << " " << std::endl;
 
