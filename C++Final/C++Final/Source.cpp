@@ -1080,7 +1080,7 @@ int	question20() // question20
 	}
 	return 0;
 }
-int PlayerName()  ///Player Input their name to lederboard 
+int PlayerName()  //Player Input their name to lederboard 
 {
 	std::string playerName;
 	std::cout << "Please enter your name or initials to be put on the leader board: ";
@@ -1093,7 +1093,7 @@ int main() {
 
 	
 
-	int Ecounter = 0;  ///Counter function 
+	int Ecounter = 0;  //Counter function 
 
 	srand(time(NULL)); //initialize the random seed
 	char question[20] = { (int)question1, (int)question2, (int)question3, (int)question4, (int)question5, (int)question6, (int)question7, (int)question8, (int)question9, (int)question10, (int)question11, (int)question12, (int)question13, (int)question14, (int)question15, (int)question16, (int)question17, (int)question18, (int)question19, (int)question20 };
@@ -1150,7 +1150,7 @@ int main() {
 							++i;
 							switch (rand() % 19)
 							{
-							case 0: question1(); break;  ///Call all the function from 1 to 20  Random order 
+							case 0: question1(); break;  //Call all the function from 1 to 20  Random order 
 							case 1: question2(); break;
 							case 2: question3(); break;
 							case 3: question4(); break;
@@ -1214,7 +1214,7 @@ int main() {
 						if (MediumTries > 0 && i < MEDIUMRANDOM)
 						{
 							++i;
-							switch (rand() % 19)  ///Call all the function from 1 to 20 Random order 
+							switch (rand() % 19)  //Call all the function from 1 to 20 Random order 
 							{
 							case 0: question1(); break;
 							case 1: question2(); break;
@@ -1274,10 +1274,10 @@ int main() {
 			{
 				do{
 
-					if (HardTries > 0 && i < HARDRANDOM)  ///Call all the function from 1 to 20  Random order 
+					if (HardTries > 0 && i < HARDRANDOM)  
 					{
 						++i;
-						switch (rand() % 19)
+						switch (rand() % 19) //Call all the function from 1 to 20  Random order 
 						{
 						case 0: question1(); break;
 						case 1: question2(); break;
