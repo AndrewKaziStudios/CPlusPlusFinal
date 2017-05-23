@@ -1100,7 +1100,7 @@ int PlayerName()  //Player Input their name to lederboard
 
 int main() {
 
-	
+
 
 	int Ecounter = 0;  //Counter function 
 
