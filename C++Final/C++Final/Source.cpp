@@ -1111,7 +1111,7 @@ int main() {
 	int MEDIUMRANDOM = 10;
 	int HARDRANDOM = 15;
 	std::string Yes_No, answer, name, answerM2, answerM3;
-	std::string play, PlayAgain;
+	std::string play, PlayAgain, STOP;
 
 	std::string line;
 	std::cout << " **** Score Board ****" << std::endl;
@@ -1134,7 +1134,7 @@ int main() {
 	else std::cout << "Unable to open file";
 
 
-
+	std::cout << " " << std::endl;
 	std::cout << "Welcome To:  " << std::endl;
 	std::cout << " " << std::endl;
 	std::cout << "           Lets" << std::endl;
@@ -1224,7 +1224,26 @@ int main() {
 					}
 					else
 					{
-						exit(EXIT_FAILURE);
+						std::cout << " **** Score Board ****" << std::endl;
+						std::ifstream myfile("highScore.txt");
+
+
+						if (myfile.is_open())
+						{
+							while (getline(myfile, line))
+							{
+
+								std::cout << line << std::endl;
+
+							}
+							myfile.close();
+							std::cout << " ****        ****" << std::endl;
+						}
+						else if (STOP == "N")
+						{
+							exit(EXIT_FAILURE);
+						}
+						
 					}
 				}
 				break;
@@ -1235,7 +1254,7 @@ int main() {
 			
 			std::cout << " " << std::endl;
 			std::cout << "In this level you have 10 lives to get all 10 question right." << std::endl;
-			std::cout << "       " << std::endl;
+			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
 			std::cout << " " << std::endl;
@@ -1295,7 +1314,26 @@ int main() {
 					}
 					else
 					{
-						exit(EXIT_FAILURE);
+						std::cout << " **** Score Board ****" << std::endl;
+						std::ifstream myfile("highScore.txt");
+
+
+						if (myfile.is_open())
+						{
+							while (getline(myfile, line))
+							{
+
+								std::cout << line << std::endl;
+
+							}
+							myfile.close();
+							std::cout << " ****        ****" << std::endl;
+						}
+						else if (STOP == "N")
+						{
+							exit(EXIT_FAILURE);
+						}
+
 					}
 				}
 			break;
@@ -1365,7 +1403,26 @@ int main() {
 				}
 				else
 				{
-					exit(EXIT_FAILURE);
+					std::cout << " **** Score Board ****" << std::endl;
+					std::ifstream myfile("highScore.txt");
+
+
+					if (myfile.is_open())
+					{
+						while (getline(myfile, line))
+						{
+
+							std::cout << line << std::endl;
+
+						}
+						myfile.close();
+						std::cout << " ****        ****" << std::endl;
+					}
+					else if (STOP == "N")
+					{
+						exit(EXIT_FAILURE);
+					}
+
 				}
 			}
 			break;
@@ -1373,7 +1430,7 @@ int main() {
 	}
 
 
-	else
+	else 
 	{
 		exit(EXIT_FAILURE);  //Exits the program
 	}
