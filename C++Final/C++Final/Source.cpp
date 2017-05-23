@@ -1112,7 +1112,28 @@ int main() {
 	int HARDRANDOM = 15;
 	std::string Yes_No, answer, name, answerM2, answerM3;
 	std::string play, PlayAgain;
+
+	std::string line;
+	std::cout << " **** Score Board ****" << std::endl;
+	std::ifstream myfile("highScore.txt");
 	
+	
+	if (myfile.is_open())
+	{
+		while (getline(myfile, line))
+		{
+			
+			std::cout << line << std::endl;
+		
+		}
+		myfile.close();
+		std::cout << " ****        ****" << std::endl;
+	}
+	
+
+	else std::cout << "Unable to open file";
+
+
 
 	std::cout << "Welcome To:  " << std::endl;
 	std::cout << " " << std::endl;
