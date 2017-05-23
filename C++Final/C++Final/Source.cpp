@@ -21,23 +21,21 @@ int question1() // Question 1
 	std::cout << " " << std::endl;
 	std::cout << "Lightning never strikes in the same place twice." << std::endl;
 	std::cout << " " << std::endl;
-	std::cout << "T) True" << std::endl; // Correct
-	std::cout << "F) False" << std::endl;
+	std::cout << "T) True" << std::endl;
+	std::cout << "F) False" << std::endl; // Correct
 	std::cin >> play;
 	if (play == "T")
-	{
-		std::cout << " Good Job " << std::endl;
-		right_wrong++;
-
-	}
-	else if (play == "F")
 	{
 		std::cout << "Wrong Answer" << std::endl;
 		EasyTries--;
 		MediumTries--;
 		HardTries--;
 		wrong_right++;
-
+	}
+	else if (play == "F")
+	{
+		std::cout << " Correct  " << std::endl;
+		right_wrong++;
 	}
 	else
 	{
@@ -182,7 +180,7 @@ int question4() // Question 4
 
 	else if (answerM2 == "B")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 	else if (answerM2 == "C")
@@ -256,7 +254,7 @@ int	question5() // Question 5
 
 	else if (answerM3 == "D" )
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 	else
@@ -310,7 +308,7 @@ int	question6()
 
 	else if (answerM3 == "D")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 	else
@@ -367,7 +365,7 @@ int	question7() // question7
 
 	else if (answerM7 == "D")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 	else
@@ -399,7 +397,7 @@ int	question8() // question8
 	if (answerM8 == "A")
 	{
 
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;  
 	}
 
@@ -454,7 +452,7 @@ int	question9() // question9
 
 	if (answerM3 == "A")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 
@@ -527,7 +525,7 @@ int	question10() // question10
 
 	else if (answerM3 == "C")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 
@@ -564,7 +562,7 @@ int	question11() // question11
 
 	if (answerM11 == "A")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++; 
 	}
 
@@ -629,7 +627,6 @@ int	question12() // question12
 	else if (answerM12 == "B")
 	{
 		std::cout << " Correct  " << std::endl;
-	
 		right_wrong++;
 	}
 
@@ -693,7 +690,7 @@ int	question13() // question13
 
 	else if (answerM13 == "C")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 
@@ -730,7 +727,7 @@ int	question14() // question14
 
 	if (answerM14 == "A")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 
@@ -812,7 +809,7 @@ int	question15() // question15
 
 	else if (answerM15 == "D")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 	else
@@ -840,7 +837,7 @@ int	question16() // question16
 
 	if (answerM3 == "A")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 
@@ -922,7 +919,7 @@ int	question17() // question17
 
 	else if (answerM3 == "D")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 	else
@@ -948,7 +945,7 @@ int	question18() // question18
 
 	if (answerM3 == "T")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 
@@ -1003,7 +1000,7 @@ int	question19() // question19
 
 	else if (answerM19 == "C")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 
@@ -1040,7 +1037,7 @@ int	question20() // question20
 
 	if (answerM20 == "A")
 	{
-		std::cout << " Good Job " << std::endl;
+		std::cout << " Correct  " << std::endl;
 		right_wrong++;
 	}
 
@@ -1184,7 +1181,7 @@ int main() {
 					} while (EasyTries >= 0 && i < EASYRANDOM);
 
 					std::cout << "" << std::endl;
-					std::cout << "Good Job! You got " << right_wrong << "/8 right." << std::endl;
+					std::cout << "You got " << right_wrong << "/8 right." << std::endl;
 					std::cout << "You missed " << wrong_right << " question(s)." << std::endl;
 					std::cout << "" << std::endl;
 					PlayerName();
@@ -1256,7 +1253,7 @@ int main() {
 						}
 					} while (MediumTries >= 0 && i < MEDIUMRANDOM);
 					std::cout << "" << std::endl;
-					std::cout << "Good Job! You got " << right_wrong << "/10 right." << std::endl;
+					std::cout << "You got " << right_wrong << "/10 right." << std::endl;
 					std::cout << "You missed " << wrong_right << " question(s)" << std::endl;
 					std::cout << "" << std::endl;
 					PlayerName();
@@ -1293,7 +1290,7 @@ int main() {
 			{
 				do{
 
-					if (HardTries > 0 && i < HARDRANDOM)  
+					if (HardTries >= 1 && i < HARDRANDOM)  
 					{
 						++i;
 						switch (rand() % 19) //Call all the function from 1 to 20  Random order 
@@ -1322,9 +1319,11 @@ int main() {
 						std::cout << " You have " << HardTries << " lives left!" << std::endl;
 						std::cout << " " << std::endl;
 					}
-				} while (HardTries >= 0 && i < HARDRANDOM);
+
+				} while (HardTries >= 1 && i < HARDRANDOM);
+
 				std::cout << "" << std::endl;
-				std::cout << "Good Job! You got " << right_wrong << "/15 right." << std::endl;
+				std::cout << "You got " << right_wrong << "/15 right." << std::endl;
 				std::cout << "You missed " << wrong_right << " question(s)" << std::endl;
 				std::cout << "" << std::endl;
 				PlayerName();
